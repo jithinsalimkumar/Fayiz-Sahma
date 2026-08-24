@@ -15,15 +15,6 @@ import MusicPlayer from "./components/MusicPlayer";
 export default function App() {
   const [currentPage, setCurrentPage] = useState("splash"); // "splash" (Page 1) or "invitation" (Page 2)
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
 
   // Listen for native phone/browser back button presses (popstate)
   useEffect(() => {
@@ -39,10 +30,6 @@ export default function App() {
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-
   const handleEnterInvitation = () => {
     // Push history state so native mobile back button returns to splash cover
     window.history.pushState({ page: "invitation" }, "", "#invitation");
@@ -52,7 +39,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF6EE] dark:bg-[#022C22] text-[#064E3B] dark:text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#064E3B] relative font-sans transition-colors duration-300 overflow-x-hidden">
+    <div className="min-h-screen bg-[#FAF6EE] text-[#064E3B] selection:bg-[#D4AF37]/30 selection:text-[#064E3B] relative font-sans overflow-x-hidden">
       {/* Scroll Progress Bar (Page 2) */}
       {currentPage === "invitation" && <ScrollProgress />}
 
@@ -89,8 +76,6 @@ export default function App() {
             <Navbar
               isAudioPlaying={isAudioPlaying}
               toggleAudio={() => setIsAudioPlaying((prev) => !prev)}
-              theme={theme}
-              toggleTheme={toggleTheme}
             />
 
             <main className="relative z-10">
