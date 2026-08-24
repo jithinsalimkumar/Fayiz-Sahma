@@ -21,7 +21,7 @@ export default function LandingSplash({ onEnter }) {
         transition={{ duration: 1 }}
         className="pt-6 z-10"
       >
-        <p className="font-arabic text-2xl sm:text-3xl text-[#064E3B] dark:text-[#D4AF37] tracking-wider mb-2 font-semibold">
+        <p className="font-arabic text-3xl sm:text-4xl text-[#D4AF37] arabic-gold tracking-wider mb-2 font-bold leading-relaxed">
           {bismillah.arabic}
         </p>
         <p className="text-xs tracking-[0.25em] uppercase font-medium text-[#0A5C36]/80 dark:text-[#FCD34D]/90 font-sans max-w-md mx-auto">
