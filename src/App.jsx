@@ -25,18 +25,29 @@ export default function App() {
     }
   }, [theme]);
 
+  // Listen for native phone/browser back button presses (popstate)
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state && event.state.page === "invitation") {
+        setCurrentPage("invitation");
+      } else {
+        setCurrentPage("splash");
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   const handleEnterInvitation = () => {
+    // Push history state so native mobile back button returns to splash cover
+    window.history.pushState({ page: "invitation" }, "", "#invitation");
     setCurrentPage("invitation");
     setIsAudioPlaying(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const handleBackToCover = () => {
-    setCurrentPage("splash");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -80,7 +91,6 @@ export default function App() {
               toggleAudio={() => setIsAudioPlaying((prev) => !prev)}
               theme={theme}
               toggleTheme={toggleTheme}
-              onBackToCover={handleBackToCover}
             />
 
             <main className="relative z-10">
