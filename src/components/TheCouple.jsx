@@ -4,7 +4,7 @@ import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, Islamic8PointStar, CardCornerFiligree } from "./IslamicPatternBg";
 
 export default function TheCouple() {
-  const { groom, bride, familyInvitationMessage, images } = weddingData;
+  const { groom, bride, familyInvitationMessage } = weddingData;
 
   return (
     <section
@@ -46,17 +46,29 @@ export default function TheCouple() {
             className="rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-lg relative overflow-hidden group"
           >
             <CardCornerFiligree />
-            {/* Islamic Geometric Arch / Medallion Mask Photo Frame */}
-            <div className="relative w-48 h-56 sm:w-56 sm:h-64 mb-6 rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#D4AF37] shadow-md gold-pulse-glow">
-              <img
-                src={groom.photo}
-                alt={groom.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+
+            {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
+            <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
+              {/* Star Crown Ornament */}
+              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#FAF6EE] dark:bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
+                <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
+              </div>
+
+              {/* Gold Gradient Outer Frame */}
+              <div className="w-full h-full p-1.5 rounded-t-[120px_90px] rounded-b-[40px] bg-gradient-to-b from-[#FFF4D0] via-[#D4AF37] to-[#B48A1D] shadow-[0_12px_30px_rgba(212,175,55,0.35)] gold-pulse-glow">
+                {/* Inner Image Container */}
+                <div className="w-full h-full rounded-t-[114px_84px] rounded-b-[34px] overflow-hidden relative border border-[#064E3B]/20">
+                  <img
+                    src={groom.photo}
+                    alt={groom.name}
+                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                </div>
+              </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] to-[#FFF4D0] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
               The Groom
             </span>
 
@@ -79,17 +91,29 @@ export default function TheCouple() {
             className="rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-lg relative overflow-hidden group"
           >
             <CardCornerFiligree />
-            {/* Islamic Geometric Arch / Medallion Mask Photo Frame */}
-            <div className="relative w-48 h-56 sm:w-56 sm:h-64 mb-6 rounded-t-full rounded-b-3xl overflow-hidden border-4 border-[#D4AF37] shadow-md gold-pulse-glow">
-              <img
-                src={bride.photo}
-                alt={bride.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+
+            {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
+            <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
+              {/* Star Crown Ornament */}
+              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#FAF6EE] dark:bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
+                <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
+              </div>
+
+              {/* Gold Gradient Outer Frame */}
+              <div className="w-full h-full p-1.5 rounded-t-[120px_90px] rounded-b-[40px] bg-gradient-to-b from-[#FFF4D0] via-[#D4AF37] to-[#B48A1D] shadow-[0_12px_30px_rgba(212,175,55,0.35)] gold-pulse-glow">
+                {/* Inner Image Container */}
+                <div className="w-full h-full rounded-t-[114px_84px] rounded-b-[34px] overflow-hidden relative border border-[#064E3B]/20">
+                  <img
+                    src={bride.photo}
+                    alt={bride.name}
+                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                </div>
+              </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] to-[#FFF4D0] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
               The Bride
             </span>
 
