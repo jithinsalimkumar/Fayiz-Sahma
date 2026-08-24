@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Calendar, MapPin, Clock, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Clock, Sparkles } from "lucide-react";
 import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, Islamic8PointStar } from "./IslamicPatternBg";
 
@@ -93,22 +93,6 @@ export default function HeroSection() {
             <span className="text-xs uppercase tracking-wider text-[#0A5C36] dark:text-[#FCD34D] font-medium">Venue</span>
             <span className="font-serif text-base font-bold text-[#064E3B] dark:text-[#FAF6EE]">{venue.name}</span>
           </div>
-        </motion.div>
-
-        {/* Scroll Down Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="mt-8 flex flex-col items-center"
-        >
-          <a
-            href="#verse"
-            className="flex flex-col items-center gap-2 text-xs uppercase tracking-widest text-[#064E3B] dark:text-[#D4AF37] font-semibold hover:text-[#D4AF37] transition-colors"
-          >
-            <span>Scroll For Blessing</span>
-            <ArrowDown className="w-4 h-4 text-[#D4AF37] animate-bounce" />
-          </a>
         </motion.div>
       </div>
     </section>
