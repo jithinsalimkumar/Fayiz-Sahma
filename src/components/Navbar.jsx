@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Volume2, VolumeX, Music } from "lucide-react";
+import { Volume2, VolumeX } from "lucide-react";
 import { weddingData } from "../config/weddingData";
 
 export default function Navbar({ isAudioPlaying, toggleAudio }) {
@@ -17,38 +17,30 @@ export default function Navbar({ isAudioPlaying, toggleAudio }) {
   return (
     <header className="fixed top-4 left-0 right-0 z-40 px-4 transition-all duration-300 pointer-events-none flex justify-center">
       <div
-        className={`max-w-[240px] w-full px-4 py-2 rounded-full pointer-events-auto flex items-center justify-between transition-all duration-300 ${
-          scrolled
-            ? "bg-[#064E3B]/95 backdrop-blur-md border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
-            : "bg-[#FAF6EE]/90 backdrop-blur-sm border-2 border-[#D4AF37] shadow-md"
+        className={`px-5 py-2.5 rounded-full pointer-events-auto flex items-center justify-between gap-6 transition-all duration-300 bg-[#064E3B] border-2 border-[#D4AF37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] ${
+          scrolled ? "scale-95 shadow-xl" : "scale-100"
         }`}
       >
-        {/* Monogram Brand Emblem */}
+        {/* Monogram Brand Emblem - High Contrast Gold on Deep Emerald */}
         <a
           href="#hero"
-          className="font-display text-lg font-bold tracking-tight text-[#064E3B] flex items-center gap-1 hover:scale-105 transition-transform"
+          className="font-display text-xl font-bold tracking-wider flex items-center hover:scale-105 transition-transform"
         >
-          <span className="gold-shimmer-text">{coupleInitials}</span>
+          <span className="gold-shimmer-text font-serif tracking-widest">{coupleInitials}</span>
         </a>
 
-        {/* Ambient Audio Music Control Button */}
+        {/* Ambient Audio Music Toggle Button - Icon Only (No Text) */}
         {weddingData.audio?.enabled && (
           <button
             onClick={toggleAudio}
-            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-[#064E3B] to-[#0A5C36] text-[#D4AF37] border border-[#D4AF37] text-[11px] font-bold uppercase tracking-wider shadow-sm hover:scale-105 transition-all cursor-pointer"
-            title={isAudioPlaying ? "Mute Ambient Nasheed Audio" : "Play Ambient Nasheed Audio"}
+            className="w-8 h-8 rounded-full bg-gradient-to-br from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] text-[#064E3B] flex items-center justify-center shadow-md hover:scale-110 active:scale-95 transition-all cursor-pointer border border-[#FFF4D0]"
+            title={isAudioPlaying ? "Mute Background Music" : "Play Background Music"}
             aria-label="Toggle Audio"
           >
             {isAudioPlaying ? (
-              <>
-                <Volume2 className="w-3.5 h-3.5 text-[#D4AF37] animate-pulse" />
-                <span>Audio</span>
-              </>
+              <Volume2 className="w-4 h-4 text-[#064E3B] animate-pulse" />
             ) : (
-              <>
-                <VolumeX className="w-3.5 h-3.5 text-[#FCD34D]" />
-                <span>Music</span>
-              </>
+              <VolumeX className="w-4 h-4 text-[#064E3B]/70" />
             )}
           </button>
         )}
