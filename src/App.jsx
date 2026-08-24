@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ScrollProgress from "./components/ScrollProgress";
 import IslamicPatternBg from "./components/IslamicPatternBg";
 import LandingSplash from "./components/LandingSplash";
@@ -12,7 +13,7 @@ import ClosingSection from "./components/ClosingSection";
 import MusicPlayer from "./components/MusicPlayer";
 
 export default function App() {
-  const [hasEntered, setHasEntered] = useState(false);
+  const [currentPage, setCurrentPage] = useState("splash"); // "splash" (Page 1) or "invitation" (Page 2)
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [theme, setTheme] = useState("light");
 
@@ -29,21 +30,20 @@ export default function App() {
   };
 
   const handleEnterInvitation = () => {
-    setHasEntered(true);
+    setCurrentPage("invitation");
     setIsAudioPlaying(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-    setTimeout(() => {
-      const heroEl = document.getElementById("hero");
-      if (heroEl) {
-        heroEl.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
+  const handleBackToCover = () => {
+    setCurrentPage("splash");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF6EE] dark:bg-[#022C22] text-[#064E3B] dark:text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#064E3B] relative font-sans transition-colors duration-300">
-      {/* Scroll Progress Bar */}
-      <ScrollProgress />
+    <div className="min-h-screen bg-[#FAF6EE] dark:bg-[#022C22] text-[#064E3B] dark:text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#064E3B] relative font-sans transition-colors duration-300 overflow-x-hidden">
+      {/* Scroll Progress Bar (Page 2) */}
+      {currentPage === "invitation" && <ScrollProgress />}
 
       {/* Layered Islamic Geometric Star Background */}
       <IslamicPatternBg />
@@ -51,28 +51,50 @@ export default function App() {
       {/* Background Audio Player */}
       <MusicPlayer isPlaying={isAudioPlaying} />
 
-      {/* Landing Splash Screen */}
-      <LandingSplash onEnter={handleEnterInvitation} />
+      {/* Dynamic Page Switcher with Framer Motion AnimatePresence */}
+      <AnimatePresence mode="wait">
+        {currentPage === "splash" ? (
+          /* PAGE 1: Fullscreen Cover Page */
+          <motion.div
+            key="page-splash"
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.92, y: -40, filter: "blur(4px)" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full min-h-screen"
+          >
+            <LandingSplash onEnter={handleEnterInvitation} />
+          </motion.div>
+        ) : (
+          /* PAGE 2: Complete Wedding Invitation Details */
+          <motion.div
+            key="page-invitation"
+            initial={{ opacity: 0, scale: 1.04, y: 50, filter: "blur(4px)" }}
+            animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+            exit={{ opacity: 0, scale: 0.96, y: 50 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full min-h-screen relative"
+          >
+            <Navbar
+              isAudioPlaying={isAudioPlaying}
+              toggleAudio={() => setIsAudioPlaying((prev) => !prev)}
+              theme={theme}
+              toggleTheme={toggleTheme}
+              onBackToCover={handleBackToCover}
+            />
 
-      {/* Main Invitation Sections */}
-      <div className={`transition-opacity duration-1000 ${hasEntered ? "opacity-100" : "opacity-90"}`}>
-        <Navbar
-          isAudioPlaying={isAudioPlaying}
-          toggleAudio={() => setIsAudioPlaying((prev) => !prev)}
-          theme={theme}
-          toggleTheme={toggleTheme}
-        />
+            <main className="relative z-10">
+              <HeroSection />
+              <BlessingVerse />
+              <TheCouple />
+              <CountdownTimer />
+              <EventCard />
+            </main>
 
-        <main className="relative z-10">
-          <HeroSection />
-          <BlessingVerse />
-          <TheCouple />
-          <CountdownTimer />
-          <EventCard />
-        </main>
-
-        <ClosingSection />
-      </div>
+            <ClosingSection />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
