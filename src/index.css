@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cinzel Decorative", "Cormorant Garamond", Georgia, serif;
+  --font-script: "Great Vibes", cursive;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-arabic: "Reem Kufi", "Amiri", serif;
+
+  --color-emerald-950: #022C22;
+  --color-emerald-900: #064E3B;
+  --color-emerald-800: #0A5C36;
+  --color-emerald-700: #0E7490;
+  --color-emerald-600: #10B981;
+
+  --color-gold-600: #B48A1D;
+  --color-gold-500: #D4AF37;
+  --color-gold-400: #F59E0B;
+  --color-gold-300: #FCD34D;
+  --color-gold-200: #FDE68A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+
+  .font-cormorant {
+    font-family: var(--font-cormorant);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+    direction: rtl;
+  }
+}
+
+/* Gold Shimmer Text Animation */
+.gold-shimmer-text {
+  background: linear-gradient(
+    110deg,
+    #B48A1D 0%,
+    #D4AF37 25%,
+    #FFF4D0 50%,
+    #D4AF37 75%,
+    #B48A1D 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldShimmer 4s linear infinite;
+}
+
+/* Gold Shimmer Border Animation */
+.gold-shimmer-border {
+  border-image: linear-gradient(
+    110deg,
+    #B48A1D 0%,
+    #D4AF37 30%,
+    #FFF4D0 50%,
+    #D4AF37 70%,
+    #B48A1D 100%
+  ) 1;
+}
+
+@keyframes goldShimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Gold Pulsing Glow Effect for Countdown Numbers */
+.gold-pulse-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35), inset 0 0 15px rgba(212, 175, 55, 0.15);
+  animation: goldPulse 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.55), inset 0 0 25px rgba(212, 175, 55, 0.25);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B48A1D;
+}
+
+/* Slow rotation animation for Islamic star geometric overlays */
+.rotate-slow {
+  animation: spinSlow 60s linear infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-slow-reverse {
+  animation: spinSlowRev 80s linear infinite;
+}
+
+@keyframes spinSlowRev {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
