@@ -55,11 +55,9 @@ export default function LandingSplash({ onEnter }) {
           The Wedding Reception
         </span>
 
-        {/* Couple First Names - Title Case Romantic Typography */}
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#FAF6EE] font-bold tracking-wide mb-2 leading-tight flex items-center justify-center gap-2 flex-wrap">
-          <span className="gold-shimmer-text">{groom.shortName}</span>
-          <span className="font-script text-[#D4AF37] font-normal text-4xl sm:text-5xl md:text-6xl mx-1.5">&amp;</span>
-          <span className="gold-shimmer-text">{bride.shortName}</span>
+        {/* Couple First Names with Original Display Typography */}
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-[#FAF6EE] font-bold tracking-wider mb-2 leading-tight">
+          {groom.shortName} <span className="font-script text-[#D4AF37] font-normal text-4xl sm:text-5xl mx-1.5">&amp;</span> {bride.shortName}
         </h1>
 
         <IslamicArchDivider className="my-4" />

@@ -72,14 +72,19 @@ export default function TheCouple() {
               The Groom
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-2">
+            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-3">
               {groom.name}
             </h3>
 
-            {/* Lineage Line */}
-            <p className="font-sans text-sm text-[#FCD34D] font-medium max-w-xs leading-relaxed">
-              {groom.lineageLine}
-            </p>
+            {/* Parentage Lineage Section - Cormorant Garamond Serif Calligraphy */}
+            <div className="mt-1 flex flex-col items-center">
+              <span className="text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+                Son Of
+              </span>
+              <p className="font-cormorant text-lg sm:text-xl text-[#FCD34D] italic leading-relaxed max-w-xs font-semibold">
+                Abdul Majeed MT <span className="font-script text-[#D4AF37] font-normal text-2xl mx-1">&amp;</span> Fathima KK
+              </p>
+            </div>
           </motion.div>
 
           {/* Bride Card */}
@@ -117,14 +122,19 @@ export default function TheCouple() {
               The Bride
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-2">
+            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-3">
               {bride.name}
             </h3>
 
-            {/* Lineage Line */}
-            <p className="font-sans text-sm text-[#FCD34D] font-medium max-w-xs leading-relaxed">
-              {bride.lineageLine}
-            </p>
+            {/* Parentage Lineage Section - Cormorant Garamond Serif Calligraphy */}
+            <div className="mt-1 flex flex-col items-center">
+              <span className="text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
+                Daughter Of
+              </span>
+              <p className="font-cormorant text-lg sm:text-xl text-[#FCD34D] italic leading-relaxed max-w-xs font-semibold">
+                Abdul Muthalib AK <span className="font-script text-[#D4AF37] font-normal text-2xl mx-1">&amp;</span> Rahmabi N
+              </p>
+            </div>
           </motion.div>
         </div>
 
@@ -144,12 +154,12 @@ export default function TheCouple() {
             Invitation From The Families
           </span>
 
-          <p className="font-sans text-base sm:text-lg text-[#FAF6EE] leading-relaxed mb-6 max-w-2xl mx-auto">
+          <p className="font-cormorant text-lg sm:text-xl text-[#FAF6EE] leading-relaxed mb-6 max-w-2xl mx-auto italic font-medium">
             {familyInvitationMessage}
           </p>
 
           <p className="font-serif text-lg italic text-[#FCD34D] font-semibold">
-            With love, prayers & blessings from both families
+            With love, prayers &amp; blessings from both families
           </p>
         </motion.div>
       </div>
