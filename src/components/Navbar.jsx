@@ -21,15 +21,15 @@ export default function Navbar({ isAudioPlaying, toggleAudio }) {
           scrolled ? "scale-95 shadow-xl" : "scale-100"
         }`}
       >
-        {/* Monogram Brand Emblem - Pinyon Script Calligraphy */}
+        {/* Monogram Brand Emblem - Perfect Harmonized Script & Display */}
         <a
           href="#hero"
           className="flex items-center hover:scale-105 transition-transform"
         >
-          <span className="gold-shimmer-text font-pinyon text-2xl sm:text-3xl font-normal tracking-wide leading-none pt-0.5 flex items-center gap-1">
-            <span>{groom.shortName[0]}</span>
-            <span className="text-xl sm:text-2xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
-            <span>{bride.shortName[0]}</span>
+          <span className="gold-shimmer-text flex items-center gap-0.5 leading-none pt-0.5">
+            <span className="font-script text-2xl sm:text-3xl font-normal">{groom.shortName[0]}</span>
+            <span className="font-script text-xl sm:text-2xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
+            <span className="font-display text-xl sm:text-2xl font-bold tracking-tight text-[#FAF6EE]">{bride.shortName[0]}</span>
           </span>
         </a>
 

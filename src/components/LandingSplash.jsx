@@ -39,15 +39,15 @@ export default function LandingSplash({ onEnter }) {
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />
 
-        {/* Monogram Crest - Luxurious Royal Gold Star Medallion */}
+        {/* Monogram Crest - Perfected Calligraphic Royal Gold Medallion */}
         <div className="relative flex items-center justify-center w-32 h-32 sm:w-36 sm:h-36 mb-6 p-2 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] shadow-[0_12px_35px_rgba(212,175,55,0.45)] gold-pulse-glow">
           {/* Inner Decorative Concentric Ring & Geometric Star Motif */}
           <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/90 relative p-2 overflow-hidden">
             <Islamic8PointStar className="absolute inset-0 w-full h-full text-[#D4AF37] opacity-20 p-2 pointer-events-none" />
-            <span className="font-pinyon text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wide leading-none z-10 pt-1 flex items-center justify-center gap-1">
-              <span>{groom.shortName[0]}</span>
-              <span className="text-3xl sm:text-4xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
-              <span>{bride.shortName[0]}</span>
+            <span className="gold-shimmer-text flex items-center justify-center gap-0.5 leading-none z-10 pt-1">
+              <span className="font-script text-4xl sm:text-5xl font-normal">{groom.shortName[0]}</span>
+              <span className="font-script text-3xl sm:text-4xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
+              <span className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#FAF6EE]">{bride.shortName[0]}</span>
             </span>
           </div>
         </div>
