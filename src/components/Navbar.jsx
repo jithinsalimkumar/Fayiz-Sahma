@@ -4,7 +4,7 @@ import { weddingData } from "../config/weddingData";
 
 export default function Navbar({ isAudioPlaying, toggleAudio }) {
   const [scrolled, setScrolled] = useState(false);
-  const { coupleInitials } = weddingData;
+  const { groom, bride } = weddingData;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +26,10 @@ export default function Navbar({ isAudioPlaying, toggleAudio }) {
           href="#hero"
           className="flex items-center hover:scale-105 transition-transform"
         >
-          <span className="gold-shimmer-text font-running text-2xl sm:text-3xl font-normal tracking-wide leading-none pt-0.5">
-            {coupleInitials}
+          <span className="gold-shimmer-text font-script text-2xl sm:text-3xl font-normal tracking-wide leading-none pt-0.5 flex items-center gap-0.5">
+            <span>{groom.shortName[0]}</span>
+            <span className="text-xl sm:text-2xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
+            <span>{bride.shortName[0]}</span>
           </span>
         </a>
 

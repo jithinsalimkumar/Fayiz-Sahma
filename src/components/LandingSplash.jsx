@@ -5,7 +5,7 @@ import { weddingData } from "../config/weddingData";
 import { Islamic8PointStar, IslamicArchDivider, CardCornerFiligree } from "./IslamicPatternBg";
 
 export default function LandingSplash({ onEnter }) {
-  const { bismillah, coupleInitials, groom, bride, wedding } = weddingData;
+  const { bismillah, groom, bride, wedding } = weddingData;
 
   return (
     <section className="relative min-h-screen w-full flex flex-col justify-between items-center px-6 py-12 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-center overflow-hidden z-10">
@@ -39,11 +39,15 @@ export default function LandingSplash({ onEnter }) {
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />
 
-        {/* Monogram Emblem with Running Cursive Script Font & Gold Double Ring Medallion */}
-        <div className="relative flex items-center justify-center w-28 h-28 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] p-1.5 mb-6 shadow-[0_10px_30px_rgba(212,175,55,0.4)] gold-pulse-glow">
-          <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/80">
-            <span className="font-running text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wide leading-none pt-1">
-              {coupleInitials}
+        {/* Monogram Crest - Luxurious Royal Gold Star Medallion */}
+        <div className="relative flex items-center justify-center w-32 h-32 sm:w-36 sm:h-36 mb-6 p-2 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] shadow-[0_12px_35px_rgba(212,175,55,0.45)] gold-pulse-glow">
+          {/* Inner Decorative Concentric Ring & Geometric Star Motif */}
+          <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/90 relative p-3 overflow-hidden">
+            <Islamic8PointStar className="absolute inset-0 w-full h-full text-[#D4AF37] opacity-20 p-2 pointer-events-none" />
+            <span className="font-script text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wide leading-none z-10 pt-1 flex items-center gap-0.5">
+              <span>{groom.shortName[0]}</span>
+              <span className="text-3xl sm:text-4xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
+              <span>{bride.shortName[0]}</span>
             </span>
           </div>
         </div>
