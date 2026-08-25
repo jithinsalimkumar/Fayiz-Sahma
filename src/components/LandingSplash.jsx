@@ -29,7 +29,7 @@ export default function LandingSplash({ onEnter }) {
         </p>
       </motion.div>
 
-      {/* Central Card with Cursive Monogram Emblem */}
+      {/* Central Card with Royal Gold Monogram Emblem */}
       <motion.div
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -39,26 +39,27 @@ export default function LandingSplash({ onEnter }) {
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />
 
-        {/* Monogram Crest - Perfected Calligraphic Royal Gold Medallion */}
-        <div className="relative flex items-center justify-center w-32 h-32 sm:w-36 sm:h-36 mb-6 p-2 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] shadow-[0_12px_35px_rgba(212,175,55,0.45)] gold-pulse-glow">
-          {/* Inner Decorative Concentric Ring & Geometric Star Motif */}
-          <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/90 relative p-2 overflow-hidden">
+        {/* Monogram Crest - Perfectly Harmonized Royal Gold Medallion */}
+        <div className="relative flex items-center justify-center w-28 h-28 sm:w-32 sm:h-32 mb-6 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] shadow-[0_12px_35px_rgba(212,175,55,0.45)] gold-pulse-glow p-1">
+          <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/90 relative overflow-hidden">
             <Islamic8PointStar className="absolute inset-0 w-full h-full text-[#D4AF37] opacity-20 p-2 pointer-events-none" />
-            <span className="gold-shimmer-text flex items-center justify-center gap-0.5 leading-none z-10 pt-1">
-              <span className="font-script text-4xl sm:text-5xl font-normal">{groom.shortName[0]}</span>
-              <span className="font-script text-3xl sm:text-4xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
-              <span className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#FAF6EE]">{bride.shortName[0]}</span>
+            <span className="font-serif text-3xl sm:text-4xl font-bold tracking-widest leading-none flex items-center justify-center gap-0.5 z-10">
+              <span className="gold-shimmer-text">{groom.shortName[0]}</span>
+              <span className="font-script text-2xl sm:text-3xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
+              <span className="gold-shimmer-text">{bride.shortName[0]}</span>
             </span>
           </div>
         </div>
 
-        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37] mb-2">
+        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37] mb-3">
           The Wedding Reception
         </span>
 
-        {/* Couple First Names with Elegant Calligraphy & Display Typography */}
-        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-[#FAF6EE] font-bold tracking-wider mb-2 leading-tight">
-          {groom.shortName} <span className="font-script text-[#D4AF37] font-normal text-4xl sm:text-5xl mx-1.5">&amp;</span> {bride.shortName}
+        {/* Couple First Names - Title Case Romantic Typography */}
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#FAF6EE] font-bold tracking-wide mb-2 leading-tight flex items-center justify-center gap-2 flex-wrap">
+          <span className="gold-shimmer-text">{groom.shortName}</span>
+          <span className="font-script text-[#D4AF37] font-normal text-4xl sm:text-5xl md:text-6xl mx-1.5">&amp;</span>
+          <span className="gold-shimmer-text">{bride.shortName}</span>
         </h1>
 
         <IslamicArchDivider className="my-4" />
