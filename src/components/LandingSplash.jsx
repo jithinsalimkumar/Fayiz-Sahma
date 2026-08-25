@@ -44,7 +44,7 @@ export default function LandingSplash({ onEnter }) {
           {/* Inner Decorative Concentric Ring & Geometric Star Motif */}
           <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/90 relative p-3 overflow-hidden">
             <Islamic8PointStar className="absolute inset-0 w-full h-full text-[#D4AF37] opacity-20 p-2 pointer-events-none" />
-            <span className="font-script text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wide leading-none z-10 pt-1 flex items-center gap-0.5">
+            <span className="font-alex text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wider leading-none z-10 pt-1 flex items-center gap-1">
               <span>{groom.shortName[0]}</span>
               <span className="text-3xl sm:text-4xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
               <span>{bride.shortName[0]}</span>

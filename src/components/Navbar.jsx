@@ -21,12 +21,12 @@ export default function Navbar({ isAudioPlaying, toggleAudio }) {
           scrolled ? "scale-95 shadow-xl" : "scale-100"
         }`}
       >
-        {/* Monogram Brand Emblem - Running Cursive Script Font */}
+        {/* Monogram Brand Emblem - Alex Brush Cursive Script Font */}
         <a
           href="#hero"
           className="flex items-center hover:scale-105 transition-transform"
         >
-          <span className="gold-shimmer-text font-script text-2xl sm:text-3xl font-normal tracking-wide leading-none pt-0.5 flex items-center gap-0.5">
+          <span className="gold-shimmer-text font-alex text-2xl sm:text-3xl font-normal tracking-wide leading-none pt-0.5 flex items-center gap-1">
             <span>{groom.shortName[0]}</span>
             <span className="text-xl sm:text-2xl text-[#D4AF37] font-normal mx-0.5">&amp;</span>
             <span>{bride.shortName[0]}</span>

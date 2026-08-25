@@ -4,7 +4,9 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-display: "Cinzel Decorative", "Cormorant Garamond", Georgia, serif;
   --font-script: "Great Vibes", cursive;
-  --font-running: "Great Vibes", "Alex Brush", "Pinyon Script", cursive;
+  --font-alex: "Alex Brush", "Great Vibes", cursive;
+  --font-pinyon: "Pinyon Script", "Great Vibes", cursive;
+  --font-running: "Alex Brush", "Great Vibes", "Pinyon Script", cursive;
   --font-cormorant: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-arabic: "Aref Ruqaa", "Amiri Quran", "Amiri", "Reem Kufi", serif;
@@ -47,6 +49,14 @@
 
   .font-script, .font-running {
     font-family: var(--font-running);
+  }
+
+  .font-alex {
+    font-family: var(--font-alex);
+  }
+
+  .font-pinyon {
+    font-family: var(--font-pinyon);
   }
 
   .font-cormorant {
