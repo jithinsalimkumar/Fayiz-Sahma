@@ -5,7 +5,7 @@ import { weddingData } from "../config/weddingData";
 import { Islamic8PointStar, IslamicArchDivider, CardCornerFiligree } from "./IslamicPatternBg";
 
 export default function LandingSplash({ onEnter }) {
-  const { bismillah, groom, bride, wedding } = weddingData;
+  const { bismillah, coupleInitials, groom, bride, wedding } = weddingData;
 
   return (
     <section className="relative min-h-screen w-full flex flex-col justify-between items-center px-6 py-12 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-center overflow-hidden z-10">
@@ -29,7 +29,7 @@ export default function LandingSplash({ onEnter }) {
         </p>
       </motion.div>
 
-      {/* Central Card with Monogram Emblem */}
+      {/* Central Card with Cursive Monogram Emblem */}
       <motion.div
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -39,24 +39,12 @@ export default function LandingSplash({ onEnter }) {
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />
 
-        {/* Royal Gold Concentric Medallion Emblem */}
-        <div className="relative mb-6 p-1.5 rounded-full bg-gradient-to-tr from-[#B48A1D] via-[#FFF4D0] to-[#D4AF37] gold-pulse-glow shadow-2xl">
-          <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-[#022C22] border-2 border-[#D4AF37] flex items-center justify-center relative overflow-hidden">
-            {/* Background star flourish */}
-            <Islamic8PointStar className="w-24 h-24 text-[#D4AF37]/15 absolute" />
-
-            {/* Initials: F & S in Cinzel Serif + Monogram Calligraphy Ampersand */}
-            <div className="relative z-10 flex items-center justify-center">
-              <span className="font-cinzel text-3xl sm:text-4xl font-extrabold gold-shimmer-text tracking-tighter">
-                F
-              </span>
-              <span className="font-monogram text-4xl sm:text-5xl text-[#D4AF37] font-normal mx-0.5 transform -translate-y-1">
-                &amp;
-              </span>
-              <span className="font-cinzel text-3xl sm:text-4xl font-extrabold gold-shimmer-text tracking-tighter">
-                S
-              </span>
-            </div>
+        {/* Monogram Emblem with Running Cursive Script Font & Gold Double Ring Medallion */}
+        <div className="relative flex items-center justify-center w-28 h-28 rounded-full bg-gradient-to-br from-[#064E3B] via-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] p-1.5 mb-6 shadow-[0_10px_30px_rgba(212,175,55,0.4)] gold-pulse-glow">
+          <div className="w-full h-full rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#022C22]/80">
+            <span className="font-running text-4xl sm:text-5xl font-normal gold-shimmer-text tracking-wide leading-none pt-1">
+              {coupleInitials}
+            </span>
           </div>
         </div>
 

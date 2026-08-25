@@ -3,9 +3,8 @@
 @theme {
   --font-serif: "Playfair Display", Georgia, serif;
   --font-display: "Cinzel Decorative", "Cormorant Garamond", Georgia, serif;
-  --font-cinzel: "Cinzel", "Cinzel Decorative", Georgia, serif;
   --font-script: "Great Vibes", cursive;
-  --font-monogram: "Pinyon Script", "Italianno", "Great Vibes", cursive;
+  --font-running: "Great Vibes", "Alex Brush", "Pinyon Script", cursive;
   --font-cormorant: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-arabic: "Aref Ruqaa", "Amiri Quran", "Amiri", "Reem Kufi", serif;
@@ -46,16 +45,8 @@
     font-family: var(--font-display);
   }
 
-  .font-cinzel {
-    font-family: var(--font-cinzel);
-  }
-
-  .font-script {
-    font-family: var(--font-script);
-  }
-
-  .font-monogram {
-    font-family: var(--font-monogram);
+  .font-script, .font-running {
+    font-family: var(--font-running);
   }
 
   .font-cormorant {
