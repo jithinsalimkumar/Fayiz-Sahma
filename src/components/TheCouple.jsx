@@ -9,7 +9,7 @@ export default function TheCouple() {
   return (
     <section
       id="couple"
-      className="py-24 px-6 bg-gradient-to-b from-[#FAF6EE] via-[#F4EFE0] to-[#FAF6EE] dark:from-[#022C22] dark:via-[#064E3B] dark:to-[#022C22] relative overflow-hidden transition-colors duration-300"
+      className="py-24 px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Section Header */}
@@ -28,7 +28,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-4xl sm:text-5xl text-[#064E3B] dark:text-[#FAF6EE] font-bold"
+            className="font-serif text-4xl sm:text-5xl text-[#FAF6EE] font-bold"
           >
             The Blessed Couple
           </motion.h2>
@@ -43,14 +43,14 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-lg relative overflow-hidden group"
+            className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-xl relative overflow-hidden group"
           >
             <CardCornerFiligree />
 
             {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
             <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
               {/* Star Crown Ornament */}
-              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#FAF6EE] dark:bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
+              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
                 <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
               </div>
 
@@ -68,16 +68,16 @@ export default function TheCouple() {
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
               The Groom
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#064E3B] dark:text-[#FAF6EE] font-bold mb-2">
+            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-2">
               {groom.name}
             </h3>
 
             {/* Lineage Line */}
-            <p className="font-sans text-sm text-[#0A5C36] dark:text-[#FCD34D] font-medium max-w-xs leading-relaxed">
+            <p className="font-sans text-sm text-[#FCD34D] font-medium max-w-xs leading-relaxed">
               {groom.lineageLine}
             </p>
           </motion.div>
@@ -88,14 +88,14 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-lg relative overflow-hidden group"
+            className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-xl relative overflow-hidden group"
           >
             <CardCornerFiligree />
 
             {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
             <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
               {/* Star Crown Ornament */}
-              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#FAF6EE] dark:bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
+              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
                 <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
               </div>
 
@@ -113,16 +113,16 @@ export default function TheCouple() {
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#064E3B] dark:text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
               The Bride
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#064E3B] dark:text-[#FAF6EE] font-bold mb-2">
+            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-2">
               {bride.name}
             </h3>
 
             {/* Lineage Line */}
-            <p className="font-sans text-sm text-[#0A5C36] dark:text-[#FCD34D] font-medium max-w-xs leading-relaxed">
+            <p className="font-sans text-sm text-[#FCD34D] font-medium max-w-xs leading-relaxed">
               {bride.lineageLine}
             </p>
           </motion.div>

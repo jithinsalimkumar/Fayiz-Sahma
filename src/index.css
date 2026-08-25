@@ -24,18 +24,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: #022C22;
+    color: #FAF6EE;
   }
   
   body {
     font-family: var(--font-sans);
     margin: 0;
     padding: 0;
-    background-color: #FAF6EE;
-    color: #064E3B;
-    transition: background-color 0.4s ease, color 0.4s ease;
-  }
-
-  html.dark body {
     background-color: #022C22 !important;
     color: #FAF6EE !important;
   }
@@ -122,7 +118,7 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAF6EE;
+  background: #022C22;
 }
 ::-webkit-scrollbar-thumb {
   background: #D4AF37;

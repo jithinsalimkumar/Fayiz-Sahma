@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Heart, Copy, Check, Share2, Sparkles } from "lucide-react";
+import { Heart, Copy, Check, Share2 } from "lucide-react";
 import confetti from "canvas-confetti";
 import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, Islamic8PointStar, CardCornerFiligree } from "./IslamicPatternBg";
@@ -45,9 +45,9 @@ export default function ClosingSection() {
   };
 
   return (
-    <footer className="py-24 px-6 bg-[#FAF6EE] dark:bg-[#022C22] relative overflow-hidden flex flex-col items-center text-center transition-colors duration-300">
+    <footer className="py-24 px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center text-center">
       {/* Background Rotating Star Pattern */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-15 dark:opacity-25 rotate-slow">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow">
         <Islamic8PointStar className="w-[550px] h-[550px] text-[#D4AF37]" />
       </div>
 
@@ -57,7 +57,7 @@ export default function ClosingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="p-8 sm:p-14 rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 shadow-xl relative"
+          className="p-8 sm:p-14 rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 shadow-xl relative"
         >
           <CardCornerFiligree />
           <IslamicArchDivider className="mb-6" />
@@ -68,7 +68,7 @@ export default function ClosingSection() {
           </p>
 
           {/* Closing Dua English */}
-          <p className="font-serif text-lg text-[#0A5C36] dark:text-[#FCD34D] italic mb-8">
+          <p className="font-serif text-lg text-[#FCD34D] italic mb-8">
             "{closingMessage.english}"
           </p>
 
@@ -84,12 +84,12 @@ export default function ClosingSection() {
 
             <button
               onClick={handleCopyHashtag}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#FAF6EE] dark:bg-[#022C22] border-2 border-[#D4AF37] text-[#064E3B] dark:text-[#D4AF37] font-serif text-base font-bold shadow-md hover:scale-105 transition-all cursor-pointer group"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] font-serif text-base font-bold shadow-md hover:scale-105 transition-all cursor-pointer group"
               title="Click to copy wedding hashtag"
             >
               <span>{hashtag}</span>
               {copied ? (
-                <Check className="w-4 h-4 text-[#064E3B] dark:text-[#FAF6EE]" />
+                <Check className="w-4 h-4 text-[#FAF6EE]" />
               ) : (
                 <Copy className="w-4 h-4 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
               )}
@@ -97,7 +97,7 @@ export default function ClosingSection() {
           </div>
 
           {copied && (
-            <p className="text-xs font-bold text-[#064E3B] dark:text-[#FCD34D] animate-fade-in mt-2">
+            <p className="text-xs font-bold text-[#FCD34D] animate-fade-in mt-2">
               Wedding hashtag copied! ✨
             </p>
           )}
@@ -108,7 +108,7 @@ export default function ClosingSection() {
           <p className="font-serif text-2xl font-bold gold-shimmer-text">
             {groom.shortName} &amp; {bride.shortName}
           </p>
-          <p className="text-xs tracking-widest uppercase font-bold text-[#064E3B] dark:text-[#FCD34D] flex items-center gap-1.5">
+          <p className="text-xs tracking-widest uppercase font-bold text-[#FCD34D] flex items-center gap-1.5">
             <span>Made with love for {groom.shortName} &amp; {bride.shortName}</span>
             <Heart className="w-3.5 h-3.5 text-[#D4AF37] fill-[#D4AF37]" />
           </p>

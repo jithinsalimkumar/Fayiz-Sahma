@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Navigation, CalendarPlus, ExternalLink } from "lucide-react";
+import { Calendar, Clock, MapPin, Navigation, CalendarPlus } from "lucide-react";
 import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, CardCornerFiligree } from "./IslamicPatternBg";
 
@@ -10,7 +10,7 @@ export default function EventCard() {
   return (
     <section
       id="event"
-      className="py-24 px-6 bg-[#FAF6EE] dark:bg-[#022C22] relative overflow-hidden transition-colors duration-300"
+      className="py-24 px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto w-full">
         {/* Section Header */}
@@ -29,7 +29,7 @@ export default function EventCard() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-4xl sm:text-5xl text-[#064E3B] dark:text-[#FAF6EE] font-bold"
+            className="font-serif text-4xl sm:text-5xl text-[#FAF6EE] font-bold"
           >
             Wedding Reception
           </motion.h2>
@@ -42,7 +42,7 @@ export default function EventCard() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
+          className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
         >
           <CardCornerFiligree />
           {/* Venue Image */}
@@ -63,42 +63,42 @@ export default function EventCard() {
           {/* Details & Interactive Map */}
           <div className="lg:w-1/2 p-8 sm:p-10 flex flex-col justify-between text-left">
             <div>
-              <span className="text-xs uppercase tracking-[0.25em] font-bold text-[#D4AF37] bg-[#064E3B]/10 dark:bg-[#D4AF37]/10 px-3 py-1 rounded-full mb-4 inline-block">
+              <span className="text-xs uppercase tracking-[0.25em] font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full mb-4 inline-block">
                 Location &amp; Timings
               </span>
 
-              <h3 className="font-serif text-2xl sm:text-3xl text-[#064E3B] dark:text-[#FAF6EE] font-bold mb-4">
+              <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF6EE] font-bold mb-4">
                 {venue.name}
               </h3>
 
               <div className="space-y-4 my-6">
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#064E3B] text-[#D4AF37] mt-0.5 shadow-xs">
+                  <div className="p-2.5 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
                     <Calendar className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-[#0A5C36] dark:text-[#FCD34D] font-bold">Date</p>
-                    <p className="font-serif text-base font-bold text-[#064E3B] dark:text-[#FAF6EE]">{wedding.displayDate}</p>
+                    <p className="text-xs uppercase tracking-wider text-[#FCD34D] font-bold">Date</p>
+                    <p className="font-serif text-base font-bold text-[#FAF6EE]">{wedding.displayDate}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#064E3B] text-[#D4AF37] mt-0.5 shadow-xs">
+                  <div className="p-2.5 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-[#0A5C36] dark:text-[#FCD34D] font-bold">Time</p>
-                    <p className="font-serif text-base font-bold text-[#064E3B] dark:text-[#FAF6EE]">{wedding.displayTime}</p>
+                    <p className="text-xs uppercase tracking-wider text-[#FCD34D] font-bold">Time</p>
+                    <p className="font-serif text-base font-bold text-[#FAF6EE]">{wedding.displayTime}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#064E3B] text-[#D4AF37] mt-0.5 shadow-xs">
+                  <div className="p-2.5 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-[#0A5C36] dark:text-[#FCD34D] font-bold">Address</p>
-                    <p className="font-sans text-sm text-[#064E3B] dark:text-[#FAF6EE] font-medium">
+                    <p className="text-xs uppercase tracking-wider text-[#FCD34D] font-bold">Address</p>
+                    <p className="font-sans text-sm text-[#FAF6EE] font-medium">
                       {venue.fullAddress}
                     </p>
                   </div>
@@ -127,7 +127,7 @@ export default function EventCard() {
                 href={venue.mapsLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#064E3B] to-[#0A5C36] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md group cursor-pointer"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#022C22] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md group cursor-pointer"
               >
                 <Navigation className="w-4 h-4 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
                 <span>Get Directions</span>
@@ -137,7 +137,7 @@ export default function EventCard() {
                 href={addToCalendarLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#FAF6EE] dark:bg-[#022C22] border-2 border-[#D4AF37] text-[#064E3B] dark:text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
               >
                 <CalendarPlus className="w-4 h-4 text-[#D4AF37]" />
                 <span>Add to Calendar</span>

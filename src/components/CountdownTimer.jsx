@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { weddingData } from "../config/weddingData";
-import { IslamicArchDivider, Islamic8PointStar } from "./IslamicPatternBg";
+import { IslamicArchDivider } from "./IslamicPatternBg";
 
 export default function CountdownTimer() {
   const { countdownTargetISO, wedding } = weddingData;
@@ -43,7 +43,7 @@ export default function CountdownTimer() {
   return (
     <section
       id="countdown"
-      className="py-24 px-6 bg-gradient-to-b from-[#FAF6EE] via-[#F4EFE0] to-[#FAF6EE] dark:from-[#022C22] dark:via-[#064E3B] dark:to-[#022C22] relative overflow-hidden flex flex-col items-center justify-center text-center transition-colors duration-300"
+      className="py-24 px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto w-full z-10">
         {/* Title */}
@@ -61,7 +61,7 @@ export default function CountdownTimer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-4xl sm:text-5xl text-[#064E3B] dark:text-[#FAF6EE] font-bold"
+          className="font-serif text-4xl sm:text-5xl text-[#FAF6EE] font-bold"
         >
           Until The Wedding Reception
         </motion.h2>
@@ -77,7 +77,7 @@ export default function CountdownTimer() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center justify-center p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#064E3B] to-[#0A5C36] dark:from-[#022C22] dark:to-[#064E3B] border-2 border-[#D4AF37] gold-pulse-glow shadow-xl relative overflow-hidden group"
+              className="flex flex-col items-center justify-center p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] gold-pulse-glow shadow-xl relative overflow-hidden group"
             >
               {/* Gold Shimmer Number Display */}
               <div className="h-16 sm:h-20 flex items-center justify-center overflow-hidden">
@@ -102,7 +102,7 @@ export default function CountdownTimer() {
           ))}
         </div>
 
-        <p className="font-sans text-xs sm:text-sm text-[#0A5C36] dark:text-[#FCD34D] font-semibold tracking-wider">
+        <p className="font-sans text-xs sm:text-sm text-[#FCD34D] font-semibold tracking-wider">
           {wedding.displayDate} • {wedding.displayTime}
         </p>
       </div>
