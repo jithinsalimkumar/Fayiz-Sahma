@@ -63,8 +63,8 @@ export const weddingData = {
   hashtag: "#FayizWedsSahma",
 
   audio: {
-    src: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=gentle-acoustic-112678.mp3",
-    enabled: true,
+    src: "",
+    enabled: false,
   },
 
   images: {

@@ -10,11 +10,9 @@ import TheCouple from "./components/TheCouple";
 import CountdownTimer from "./components/CountdownTimer";
 import EventCard from "./components/EventCard";
 import ClosingSection from "./components/ClosingSection";
-import MusicPlayer from "./components/MusicPlayer";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("splash"); // "splash" (Page 1) or "invitation" (Page 2)
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
   // Listen for native phone/browser back button presses (popstate)
   useEffect(() => {
@@ -34,7 +32,6 @@ export default function App() {
     // Push history state so native mobile back button returns to splash cover
     window.history.pushState({ page: "invitation" }, "", "#invitation");
     setCurrentPage("invitation");
-    setIsAudioPlaying(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -45,9 +42,6 @@ export default function App() {
 
       {/* Layered Islamic Geometric Star Background */}
       <IslamicPatternBg />
-
-      {/* Background Audio Player */}
-      <MusicPlayer isPlaying={isAudioPlaying} />
 
       {/* Dynamic Page Switcher with Framer Motion AnimatePresence */}
       <AnimatePresence mode="wait">
@@ -73,10 +67,7 @@ export default function App() {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="w-full min-h-screen relative"
           >
-            <Navbar
-              isAudioPlaying={isAudioPlaying}
-              toggleAudio={() => setIsAudioPlaying((prev) => !prev)}
-            />
+            <Navbar />
 
             <main className="relative z-10">
               <HeroSection />
