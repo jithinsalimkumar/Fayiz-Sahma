@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-4 left-0 right-0 z-40 px-4 transition-all duration-300 pointer-events-none flex justify-center">
       <div
-        className={`px-5 py-2 rounded-full pointer-events-auto flex items-center justify-center transition-all duration-300 bg-[#064E3B] border-2 border-[#D4AF37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] ${
+        className={`px-6 py-2 rounded-full pointer-events-auto flex items-center justify-center transition-all duration-300 bg-[#064E3B] border-2 border-[#D4AF37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] ${
           scrolled ? "scale-95 shadow-xl" : "scale-100"
         }`}
       >
