@@ -57,12 +57,17 @@ export default function TheCouple() {
               {/* Clean Islamic Arch Outer Frame */}
               <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22]">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none touch-none">
                   <img
                     src={groom.photo}
                     alt={groom.name}
-                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out"
+                    draggable="false"
+                    onContextMenu={(e) => e.preventDefault()}
+                    onDragStart={(e) => e.preventDefault()}
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none touch-none"
                   />
+                  {/* Transparent touch shield blocking native image zoom & long press popups */}
+                  <div className="absolute inset-0 z-10 select-none touch-none" onContextMenu={(e) => e.preventDefault()} />
                 </div>
               </div>
             </div>
@@ -106,12 +111,17 @@ export default function TheCouple() {
               {/* Clean Islamic Arch Outer Frame */}
               <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22]">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none touch-none">
                   <img
                     src={bride.photo}
                     alt={bride.name}
-                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out"
+                    draggable="false"
+                    onContextMenu={(e) => e.preventDefault()}
+                    onDragStart={(e) => e.preventDefault()}
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none touch-none"
                   />
+                  {/* Transparent touch shield blocking native image zoom & long press popups */}
+                  <div className="absolute inset-0 z-10 select-none touch-none" onContextMenu={(e) => e.preventDefault()} />
                 </div>
               </div>
             </div>

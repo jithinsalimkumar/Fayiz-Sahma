@@ -32,18 +32,6 @@ export default function Footer() {
           May Allah reward you with goodness for joining us on our special day.
         </motion.p>
 
-        {/* 3. Flowing Cursive Calligraphy Couple Names */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.25 }}
-          className="mb-10 w-full overflow-x-auto no-scrollbar py-2"
-        >
-          <h3 className="font-allura text-lg min-[360px]:text-xl min-[480px]:text-2xl sm:text-3xl md:text-4xl text-[#FAF6EE] font-normal leading-tight drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] whitespace-nowrap tracking-wide px-2">
-            {groom.name} <span className="text-[#D4AF37] font-normal mx-1">&amp;</span> {bride.name}
-          </h3>
-        </motion.div>
 
         {/* 4. Fine Horizontal Gold Accent Divider */}
         <div className="w-full max-w-3xl border-t border-[#D4AF37]/30 my-8 opacity-70" />
