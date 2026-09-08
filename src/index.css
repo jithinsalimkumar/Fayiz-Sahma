@@ -22,6 +22,13 @@
   --color-gold-400: #F59E0B;
   --color-gold-300: #FCD34D;
   --color-gold-200: #FDE68A;
+  --font-greatvibes: "Great Vibes", cursive;
+  --font-doulaise: "Monsieur La Doulaise", cursive;
+  --font-italianno: "Italianno", cursive;
+  --font-allura: "Allura", cursive;
+  --font-muellerhoff: "Herr Von Muellerhoff", cursive;
+  --font-balmoral: "Balmoral Script", "Balmoral", "Balmoral LET", "Herr Von Muellerhoff", "Monsieur La Doulaise", "Pinyon Script", cursive;
+  --font-pepite: "Pepite Script", "Pepite", "PepiteScript", "Balmoral Script", "Herr Von Muellerhoff", "Monsieur La Doulaise", cursive;
 }
 
 @layer base {
@@ -57,6 +64,30 @@
 
   .font-pinyon {
     font-family: var(--font-pinyon);
+  }
+
+  .font-greatvibes {
+    font-family: var(--font-greatvibes);
+  }
+
+  .font-doulaise {
+    font-family: var(--font-doulaise);
+  }
+
+  .font-italianno {
+    font-family: var(--font-italianno);
+  }
+
+  .font-allura {
+    font-family: var(--font-allura);
+  }
+
+  .font-balmoral {
+    font-family: var(--font-balmoral);
+  }
+
+  .font-pepite {
+    font-family: var(--font-pepite);
   }
 
   .font-cormorant {

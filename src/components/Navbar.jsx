@@ -13,20 +13,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-40 px-4 transition-all duration-300 pointer-events-none flex justify-center">
-      <div
-        className={`px-5 py-1.5 rounded-full pointer-events-auto flex items-center justify-center transition-all duration-300 bg-[#064E3B] border-2 border-[#D4AF37] shadow-[0_10px_25px_rgba(0,0,0,0.4)] ${
-          scrolled ? "scale-95 shadow-xl" : "scale-100"
+    <header className="fixed top-3 left-0 right-0 z-40 px-4 transition-all duration-300 pointer-events-none flex justify-center">
+      <a
+        href="#hero"
+        className={`pointer-events-auto flex items-center justify-center transition-all duration-300 hover:scale-105 ${
+          scrolled ? "scale-90 opacity-95 drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]" : "scale-100 drop-shadow-[0_10px_30px_rgba(212,175,55,0.45)]"
         }`}
       >
-        {/* Custom Classy Calligraphy Monogram Emblem */}
-        <a
-          href="#hero"
-          className="flex items-center hover:scale-105 transition-transform"
-        >
-          <FSMonogramCalligraphy className="w-20 h-9" />
-        </a>
-      </div>
+        {/* Royal Monogram Emblem - Larger & Clean Circular Design without Oval Covering */}
+        <FSMonogramCalligraphy className="w-16 h-16 sm:w-20 sm:h-20" />
+      </a>
     </header>
   );
 }

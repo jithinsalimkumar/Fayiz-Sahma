@@ -15,14 +15,14 @@ export const weddingData = {
     name: "Muhammed Fayiz. MT",
     shortName: "Fayiz",
     lineageLine: "Son of Abdul Majeed MT & Fathima KK",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
+    photo: "/images/groom.jpg",
   },
 
   bride: {
     name: "Sahma. AK",
     shortName: "Sahma",
     lineageLine: "Daughter of Abdul Muthalib AK & Rahmabi N",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
+    photo: "/images/bride.jpg",
   },
 
   wedding: {
@@ -68,16 +68,16 @@ export const weddingData = {
   },
 
   images: {
-    couplePhoto: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200",
+    couplePhoto: "/images/bride.jpg",
     venuePhoto: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
     galleryPhotos: [
       {
-        url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000",
-        caption: "The Journey Begins",
+        url: "/images/bride.jpg",
+        caption: "Sahma — The Bride",
       },
       {
-        url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=1000",
-        caption: "Moments of Joy",
+        url: "/images/groom.jpg",
+        caption: "Muhammed Fayiz — The Groom",
       },
       {
         url: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&q=80&w=1000",

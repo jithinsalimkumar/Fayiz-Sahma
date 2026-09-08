@@ -36,47 +36,46 @@ export default function TheCouple() {
         </div>
 
         {/* Groom & Bride Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 mb-16">
           {/* Groom Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-xl relative overflow-hidden group"
+            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 p-4 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
-            {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
-            <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
-              {/* Star Crown Ornament */}
-              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
-                <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
+            {/* Simple & Classy Islamic Arch Frame */}
+            <div className="relative w-60 h-76 sm:w-68 sm:h-84 mb-8 flex flex-col items-center pt-3">
+              {/* Refined 8-Point Star Apex Ornament */}
+              <div className="absolute top-0 z-20 w-8 h-8 rounded-full bg-[#043327] border-2 border-[#D4AF37] flex items-center justify-center shadow-lg">
+                <Islamic8PointStar className="w-4 h-4 text-[#FCD34D]" />
               </div>
 
-              {/* Gold Gradient Outer Frame */}
-              <div className="w-full h-full p-1.5 rounded-t-[120px_90px] rounded-b-[40px] bg-gradient-to-b from-[#FFF4D0] via-[#D4AF37] to-[#B48A1D] shadow-[0_12px_30px_rgba(212,175,55,0.35)] gold-pulse-glow">
-                {/* Inner Image Container */}
-                <div className="w-full h-full rounded-t-[114px_84px] rounded-b-[34px] overflow-hidden relative border border-[#064E3B]/20">
+              {/* Clean Islamic Arch Outer Frame */}
+              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
+                {/* Inner Fine Gold Accent Ring */}
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22]">
                   <img
                     src={groom.photo}
                     alt={groom.name}
-                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-5 py-1.5 rounded-full mb-3 shadow-md border border-[#FFF5D6]/40">
               The Groom
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-3">
+            <h3 className="font-allura text-lg min-[400px]:text-[1.4rem] sm:text-3xl md:text-4xl lg:text-5xl text-[#FAF6EE] font-normal mb-2 leading-tight drop-shadow-md whitespace-nowrap">
               {groom.name}
             </h3>
 
-            {/* Parentage Lineage Section - Cormorant Garamond Serif Calligraphy */}
+            {/* Parentage Lineage Section */}
             <div className="mt-1 flex flex-col items-center">
               <span className="text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
                 Son Of
@@ -93,40 +92,39 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-8 sm:p-10 text-center flex flex-col items-center shadow-xl relative overflow-hidden group"
+            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 p-4 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
-            {/* Pointed Mihrab Arch Frame with Gold Star Crown */}
-            <div className="relative w-52 h-64 sm:w-60 sm:h-72 mb-6 flex flex-col items-center">
-              {/* Star Crown Ornament */}
-              <div className="absolute -top-4 z-20 w-8 h-8 rounded-full bg-[#064E3B] border border-[#D4AF37] flex items-center justify-center shadow-md">
-                <Islamic8PointStar className="w-5 h-5 text-[#D4AF37]" />
+            {/* Simple & Classy Islamic Arch Frame */}
+            <div className="relative w-60 h-76 sm:w-68 sm:h-84 mb-8 flex flex-col items-center pt-3">
+              {/* Refined 8-Point Star Apex Ornament */}
+              <div className="absolute top-0 z-20 w-8 h-8 rounded-full bg-[#043327] border-2 border-[#D4AF37] flex items-center justify-center shadow-lg">
+                <Islamic8PointStar className="w-4 h-4 text-[#FCD34D]" />
               </div>
 
-              {/* Gold Gradient Outer Frame */}
-              <div className="w-full h-full p-1.5 rounded-t-[120px_90px] rounded-b-[40px] bg-gradient-to-b from-[#FFF4D0] via-[#D4AF37] to-[#B48A1D] shadow-[0_12px_30px_rgba(212,175,55,0.35)] gold-pulse-glow">
-                {/* Inner Image Container */}
-                <div className="w-full h-full rounded-t-[114px_84px] rounded-b-[34px] overflow-hidden relative border border-[#064E3B]/20">
+              {/* Clean Islamic Arch Outer Frame */}
+              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
+                {/* Inner Fine Gold Accent Ring */}
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22]">
                   <img
                     src={bride.photo}
                     alt={bride.name}
-                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-3 shadow-xs">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-5 py-1.5 rounded-full mb-3 shadow-md border border-[#FFF5D6]/40">
               The Bride
             </span>
 
-            <h3 className="font-serif text-3xl sm:text-4xl text-[#FAF6EE] font-bold mb-3">
+            <h3 className="font-allura text-lg min-[400px]:text-[1.4rem] sm:text-3xl md:text-4xl lg:text-5xl text-[#FAF6EE] font-normal mb-2 leading-tight drop-shadow-md whitespace-nowrap">
               {bride.name}
             </h3>
 
-            {/* Parentage Lineage Section - Cormorant Garamond Serif Calligraphy */}
+            {/* Parentage Lineage Section */}
             <div className="mt-1 flex flex-col items-center">
               <span className="text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-1">
                 Daughter Of

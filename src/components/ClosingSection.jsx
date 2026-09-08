@@ -1,28 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Heart, Copy, Check, Share2 } from "lucide-react";
-import confetti from "canvas-confetti";
+import { Share2 } from "lucide-react";
 import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, Islamic8PointStar, CardCornerFiligree } from "./IslamicPatternBg";
 
 export default function ClosingSection() {
-  const { closingMessage, groom, bride, hashtag } = weddingData;
-  const [copied, setCopied] = useState(false);
+  const { closingMessage, groom, bride } = weddingData;
   const [shared, setShared] = useState(false);
-
-  const handleCopyHashtag = () => {
-    navigator.clipboard.writeText(hashtag);
-    setCopied(true);
-
-    confetti({
-      particleCount: 50,
-      spread: 70,
-      origin: { y: 0.8 },
-      colors: ["#D4AF37", "#064E3B", "#FAF6EE", "#F59E0B"],
-    });
-
-    setTimeout(() => setCopied(false), 2500);
-  };
 
   const handleShareSite = async () => {
     const shareData = {
@@ -72,45 +56,22 @@ export default function ClosingSection() {
             "{closingMessage.english}"
           </p>
 
-          {/* Share Invitation & Hashtag Actions */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 my-6">
+          {/* Share Invitation Action */}
+          <div className="flex items-center justify-center my-6">
             <button
               onClick={handleShareSite}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r from-[#064E3B] to-[#0A5C36] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] shadow-md hover:scale-105 transition-all cursor-pointer"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#064E3B] via-[#0A5C36] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] shadow-md hover:scale-105 transition-all cursor-pointer"
             >
               <Share2 className="w-4 h-4 text-[#D4AF37]" />
               <span>{shared ? "Link Copied!" : "Share Invitation"}</span>
             </button>
-
-            <button
-              onClick={handleCopyHashtag}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] font-serif text-base font-bold shadow-md hover:scale-105 transition-all cursor-pointer group"
-              title="Click to copy wedding hashtag"
-            >
-              <span>{hashtag}</span>
-              {copied ? (
-                <Check className="w-4 h-4 text-[#FAF6EE]" />
-              ) : (
-                <Copy className="w-4 h-4 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
-              )}
-            </button>
           </div>
-
-          {copied && (
-            <p className="text-xs font-bold text-[#FCD34D] animate-fade-in mt-2">
-              Wedding hashtag copied! ✨
-            </p>
-          )}
         </motion.div>
 
         {/* Footer Credit Line */}
         <div className="mt-16 pt-8 border-t border-[#D4AF37]/30 flex flex-col items-center gap-2">
           <p className="font-serif text-2xl font-bold gold-shimmer-text">
             {groom.shortName} &amp; {bride.shortName}
-          </p>
-          <p className="text-xs tracking-widest uppercase font-bold text-[#FCD34D] flex items-center gap-1.5">
-            <span>Made with love for {groom.shortName} &amp; {bride.shortName}</span>
-            <Heart className="w-3.5 h-3.5 text-[#D4AF37] fill-[#D4AF37]" />
           </p>
         </div>
       </div>
