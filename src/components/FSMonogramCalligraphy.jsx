@@ -3,14 +3,15 @@ import React from "react";
 /**
  * Royal Monogram Emblem:
  * F (left) + Perfect Centered Solid Gold Heart + S (right)
- * Set in 24K Gold 8-Point Star Medallion.
+ * Set in Monsieur La Doulaise / Herr Von Muellerhoff extravagant flowing fancy-script.
  */
 export default function FSMonogramCalligraphy({ className = "w-32 h-32", fontStyle = "greatvibes" }) {
   const fontFamilies = {
     greatvibes: "'Great Vibes', 'Alex Brush', 'Allura', 'Pinyon Script', cursive",
-    alexbrush: "'Alex Brush', 'Great Vibes', 'Allura', cursive",
+    doulaise: "'Monsieur La Doulaise', 'Herr Von Muellerhoff', 'Great Vibes', cursive",
+    muellerhoff: "'Herr Von Muellerhoff', 'Monsieur La Doulaise', 'Great Vibes', cursive",
+    italianno: "'Italianno', 'Pinyon Script', 'Great Vibes', cursive",
     pinyon: "'Pinyon Script', 'Great Vibes', cursive",
-    allura: "'Allura', 'Great Vibes', cursive",
     cinzel: "'Cinzel Decorative', Georgia, serif",
   };
 
@@ -111,7 +112,7 @@ export default function FSMonogramCalligraphy({ className = "w-32 h-32", fontSty
       <circle
         cx="120"
         cy="120"
-        r="26"
+        r="18"
         stroke="url(#monogramGoldGrad)"
         strokeWidth="1.2"
         strokeDasharray="3 3"
@@ -119,39 +120,39 @@ export default function FSMonogramCalligraphy({ className = "w-32 h-32", fontSty
         fill="none"
       />
 
-      {/* 7. Flawless Solid 24K Gold Heart Symbol (DEAD-CENTERED AT X = 120, Y = 120) */}
+      {/* 7. Perfectly Centered & Proportional Solid 24K Gold Heart Symbol (CENTERED AT X = 120, Y = 120.5) */}
       <path
-        d="M 120 137 C 114.5 130.5, 104 118, 104 109.5 C 104 104, 108.2 100, 113.8 100 C 117.2 100, 119.3 101.8, 120 103.5 C 120.7 101.8, 122.8 100, 126.2 100 C 131.8 100, 136 104, 136 109.5 C 136 118, 125.5 130.5, 120 137 Z"
+        d="M 120 131.5 C 116.5 127.5, 109 120, 109 115.5 C 109 111.8, 112 109.2, 115.5 109.2 C 117.8 109.2, 119.3 110.5, 120 111.4 C 120.7 110.5, 122.2 109.2, 124.5 109.2 C 128 109.2, 131 111.8, 131 115.5 C 131 120, 123.5 127.5, 120 131.5 Z"
         fill="url(#monogramGoldGrad)"
-        className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+        className="drop-shadow-[0_2px_5px_rgba(0,0,0,0.6)]"
       />
 
-      {/* 8. Letter F on Left (x = 55: Top tip of F is exactly 17px from heart left edge) */}
+      {/* 8. Flowing Fancy-Script Letter F on Left (x = 68, y = 120, fontSize = 34) */}
       <text
-        x="55"
-        y="118"
+        x="68"
+        y="120"
         fontFamily={selectedFont}
-        fontSize="58"
+        fontSize="34"
         fontWeight="normal"
         fill="url(#monogramGoldGrad)"
         textAnchor="middle"
         dominantBaseline="central"
-        className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+        className="drop-shadow-[0_2px_5px_rgba(0,0,0,0.6)]"
       >
         F
       </text>
 
-      {/* 9. Letter S on Right (x = 172: Bottom tip of S is exactly 17px from heart right edge) */}
+      {/* 9. Flowing Fancy-Script Letter S on Right (x = 166, y = 119, fontSize = 34) */}
       <text
-        x="172"
-        y="118"
+        x="166"
+        y="119"
         fontFamily={selectedFont}
-        fontSize="58"
+        fontSize="34"
         fontWeight="normal"
         fill="url(#monogramGoldGrad)"
         textAnchor="middle"
         dominantBaseline="central"
-        className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+        className="drop-shadow-[0_2px_5px_rgba(0,0,0,0.6)]"
       >
         S
       </text>

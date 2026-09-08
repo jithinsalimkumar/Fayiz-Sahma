@@ -29,6 +29,7 @@
   --font-muellerhoff: "Herr Von Muellerhoff", cursive;
   --font-balmoral: "Balmoral Script", "Balmoral", "Balmoral LET", "Herr Von Muellerhoff", "Monsieur La Doulaise", "Pinyon Script", cursive;
   --font-pepite: "Pepite Script", "Pepite", "PepiteScript", "Balmoral Script", "Herr Von Muellerhoff", "Monsieur La Doulaise", cursive;
+  --font-beckam: "Beckam Script Pro", "Beckam Script", "BeckamScriptPro", "Great Vibes", "Alex Brush", cursive;
 }
 
 @layer base {
@@ -88,6 +89,10 @@
 
   .font-pepite {
     font-family: var(--font-pepite);
+  }
+
+  .font-beckam {
+    font-family: var(--font-beckam);
   }
 
   .font-cormorant {

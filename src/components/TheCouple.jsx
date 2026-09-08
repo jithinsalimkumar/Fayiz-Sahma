@@ -71,7 +71,7 @@ export default function TheCouple() {
               The Groom
             </span>
 
-            <h3 className="font-allura text-lg min-[400px]:text-[1.4rem] sm:text-3xl md:text-4xl lg:text-5xl text-[#FAF6EE] font-normal mb-2 leading-tight drop-shadow-md whitespace-nowrap">
+            <h3 className="font-script text-[1.4rem] min-[350px]:text-[1.65rem] min-[390px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide px-1">
               {groom.name}
             </h3>
 
@@ -120,7 +120,7 @@ export default function TheCouple() {
               The Bride
             </span>
 
-            <h3 className="font-allura text-lg min-[400px]:text-[1.4rem] sm:text-3xl md:text-4xl lg:text-5xl text-[#FAF6EE] font-normal mb-2 leading-tight drop-shadow-md whitespace-nowrap">
+            <h3 className="font-script text-[1.4rem] min-[350px]:text-[1.65rem] min-[390px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide px-1">
               {bride.name}
             </h3>
 
