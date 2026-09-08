@@ -9,6 +9,7 @@ import BlessingVerse from "./components/BlessingVerse";
 import TheCouple from "./components/TheCouple";
 import CountdownTimer from "./components/CountdownTimer";
 import EventCard from "./components/EventCard";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("splash"); // "splash" (Page 1) or "invitation" (Page 2)
@@ -75,6 +76,7 @@ export default function App() {
               <TheCouple />
               <CountdownTimer />
               <EventCard />
+              <Footer />
             </main>
           </motion.div>
         )}
