@@ -3,10 +3,9 @@ import React from "react";
 /**
  * Royal Monogram Emblem:
  * F (left) + Perfect Centered Solid Gold Heart + S (right)
- * Ultra-clear, attractive, and recognizable luxury calligraphy.
+ * Set in 24K Gold 8-Point Star Medallion.
  */
 export default function FSMonogramCalligraphy({ className = "w-32 h-32", fontStyle = "greatvibes" }) {
-  // Select font family stack based on preference
   const fontFamilies = {
     greatvibes: "'Great Vibes', 'Alex Brush', 'Allura', 'Pinyon Script', cursive",
     alexbrush: "'Alex Brush', 'Great Vibes', 'Allura', cursive",
@@ -59,7 +58,7 @@ export default function FSMonogramCalligraphy({ className = "w-32 h-32", fontSty
         stroke="url(#monogramGoldGrad)"
         strokeWidth="3"
         fill="#022C22"
-        fillOpacity="0.88"
+        fillOpacity="0.9"
         filter="url(#goldGlowFilter)"
       />
 

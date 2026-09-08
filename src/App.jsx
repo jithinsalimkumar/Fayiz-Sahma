@@ -36,6 +36,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#022C22] text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#FAF6EE] relative font-sans overflow-x-hidden">
+      {/* Truly Fixed Sticky Top Header Navbar (Anchored directly to viewport screen) */}
+      {currentPage === "invitation" && <Navbar />}
+
       {/* Scroll Progress Bar (Page 2) */}
       {currentPage === "invitation" && <ScrollProgress />}
 
@@ -50,7 +53,7 @@ export default function App() {
             key="page-splash"
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.92, y: -40, filter: "blur(4px)" }}
+            exit={{ opacity: 0, scale: 0.92, y: -40 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="w-full min-h-screen"
           >
@@ -60,14 +63,12 @@ export default function App() {
           /* PAGE 2: Complete Wedding Invitation Details */
           <motion.div
             key="page-invitation"
-            initial={{ opacity: 0, scale: 1.04, y: 50, filter: "blur(4px)" }}
-            animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-            exit={{ opacity: 0, scale: 0.96, y: 50 }}
+            initial={{ opacity: 0, scale: 1.02, y: 30 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.96, y: 30 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="w-full min-h-screen relative"
           >
-            <Navbar />
-
             <main className="relative z-10">
               <HeroSection />
               <BlessingVerse />
