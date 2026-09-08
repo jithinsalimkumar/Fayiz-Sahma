@@ -41,7 +41,7 @@ export const weddingData = {
       "Malappuram, Kerala — 679328",
     ],
     mapsLink: "https://maps.app.goo.gl/SbZJVjbXSR8JUnr46",
-    photo: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
+    photo: "/images/venue.jpg",
     mapEmbedUrl: "https://maps.google.com/maps?q=Rose+Hill+Auditorium+Cherukode+Manjeri+Road+Malappuram+Kerala+679328&t=&z=15&ie=UTF8&iwloc=&output=embed",
   },
 
@@ -69,7 +69,7 @@ export const weddingData = {
 
   images: {
     couplePhoto: "/images/bride.jpg",
-    venuePhoto: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
+    venuePhoto: "/images/venue.jpg",
     galleryPhotos: [
       {
         url: "/images/bride.jpg",
