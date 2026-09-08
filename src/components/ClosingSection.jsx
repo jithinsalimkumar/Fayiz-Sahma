@@ -31,7 +31,7 @@ export default function ClosingSection() {
   return (
     <footer className="py-24 px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center text-center">
       {/* Background Rotating Star Pattern */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow transform-gpu will-change-transform">
         <Islamic8PointStar className="w-[550px] h-[550px] text-[#D4AF37]" />
       </div>
 
@@ -41,7 +41,7 @@ export default function ClosingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="p-8 sm:p-14 rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 shadow-xl relative"
+          className="p-8 sm:p-14 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37]/60 shadow-xl relative"
         >
           <CardCornerFiligree />
           <IslamicArchDivider className="mb-6" />

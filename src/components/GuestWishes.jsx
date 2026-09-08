@@ -80,7 +80,7 @@ export default function GuestWishes() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5 rounded-3xl bg-[#FAF6EE]/90 dark:bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/50 p-6 sm:p-8 shadow-lg"
+            className="lg:col-span-5 rounded-3xl bg-[#FAF6EE] dark:bg-[#064E3B]/95 border-2 border-[#D4AF37]/50 p-6 sm:p-8 shadow-lg"
           >
             <div className="flex items-center gap-2 text-[#D4AF37] mb-4">
               <MessageSquareHeart className="w-5 h-5" />

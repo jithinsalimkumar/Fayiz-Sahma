@@ -30,10 +30,10 @@ export default function LandingSplash({ onEnter }) {
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 0.2 }}
-        className="my-auto py-10 px-8 sm:px-16 rounded-3xl bg-[#064E3B]/95 backdrop-blur-md border-2 border-[#D4AF37] shadow-[0_15px_50px_rgba(0,0,0,0.6)] max-w-lg w-full z-10 flex flex-col items-center relative overflow-hidden"
+        className="my-auto py-10 px-8 sm:px-16 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37] shadow-[0_15px_50px_rgba(0,0,0,0.6)] max-w-lg w-full z-10 flex flex-col items-center relative overflow-hidden"
       >
         {/* Dynamic Rotating Geometric Pattern (Enlarged Size with Subtle Opacity for Crystal Clear Text Legibility) */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow transform-gpu will-change-transform">
           <Islamic8PointStar className="w-[550px] h-[550px] sm:w-[650px] sm:h-[650px] text-[#D4AF37]" />
         </div>
         <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.15)_0%,transparent_75%)]" />

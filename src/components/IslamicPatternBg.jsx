@@ -73,12 +73,12 @@ export default function IslamicPatternBg() {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 opacity-25 dark:opacity-20">
       {/* Top Left Rotating 8-Point Star */}
-      <div className="absolute -top-24 -left-24 rotate-slow">
+      <div className="absolute -top-24 -left-24 rotate-slow transform-gpu will-change-transform">
         <Islamic8PointStar className="w-[550px] h-[550px] text-[#D4AF37]" />
       </div>
 
       {/* Bottom Right Rotating 12-Point Star */}
-      <div className="absolute -bottom-36 -right-36 rotate-slow-reverse">
+      <div className="absolute -bottom-36 -right-36 rotate-slow-reverse transform-gpu will-change-transform">
         <Islamic12PointStar className="w-[650px] h-[650px] text-[#0A5C36] dark:text-[#D4AF37]" />
       </div>
 

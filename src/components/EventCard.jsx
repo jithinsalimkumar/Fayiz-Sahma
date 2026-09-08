@@ -63,7 +63,7 @@ export default function EventCard() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="rounded-3xl bg-[#064E3B]/90 backdrop-blur-md border-2 border-[#D4AF37]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
+          className="rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
         >
           <CardCornerFiligree />
           {/* Venue Image */}
@@ -75,7 +75,7 @@ export default function EventCard() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
-              <span className="text-xs uppercase tracking-widest bg-[#064E3B]/90 text-[#FCD34D] px-3.5 py-1 rounded-full border border-[#D4AF37] backdrop-blur-xs font-semibold">
+              <span className="text-xs uppercase tracking-widest bg-[#064E3B]/95 text-[#FCD34D] px-3.5 py-1 rounded-full border border-[#D4AF37] font-semibold">
                 Official Venue
               </span>
             </div>
@@ -128,7 +128,7 @@ export default function EventCard() {
 
               {/* Embedded Interactive Map Preview */}
               {venue.mapEmbedUrl && (
-                <div className="w-full h-36 rounded-xl overflow-hidden border border-[#D4AF37]/40 mb-6 shadow-inner">
+                <div className="w-full h-36 rounded-xl overflow-hidden border border-[#D4AF37]/40 mb-6 shadow-inner relative">
                   <iframe
                     title="Venue Location Map"
                     src={venue.mapEmbedUrl}
@@ -137,6 +137,7 @@ export default function EventCard() {
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
+                    className="w-full h-full pointer-events-none"
                   />
                 </div>
               )}

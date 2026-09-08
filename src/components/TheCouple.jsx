@@ -43,7 +43,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#043327]/95 border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
@@ -57,17 +57,17 @@ export default function TheCouple() {
               {/* Clean Islamic Arch Outer Frame */}
               <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none touch-none">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none">
                   <img
                     src={groom.photo}
                     alt={groom.name}
                     draggable="false"
                     onContextMenu={(e) => e.preventDefault()}
                     onDragStart={(e) => e.preventDefault()}
-                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none touch-none"
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none"
                   />
-                  {/* Transparent touch shield blocking native image zoom & long press popups */}
-                  <div className="absolute inset-0 z-10 select-none touch-none" onContextMenu={(e) => e.preventDefault()} />
+                  {/* Transparent touch shield blocking native image zoom & long press popups without blocking scroll */}
+                  <div className="absolute inset-0 z-10 pointer-events-none select-none" onContextMenu={(e) => e.preventDefault()} />
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#043327]/95 border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
@@ -111,17 +111,17 @@ export default function TheCouple() {
               {/* Clean Islamic Arch Outer Frame */}
               <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none touch-none">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none">
                   <img
                     src={bride.photo}
                     alt={bride.name}
                     draggable="false"
                     onContextMenu={(e) => e.preventDefault()}
                     onDragStart={(e) => e.preventDefault()}
-                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none touch-none"
+                    className="w-full h-full object-cover object-top scale-[1.05] group-hover:scale-[1.10] transition-transform duration-700 ease-out pointer-events-none select-none"
                   />
-                  {/* Transparent touch shield blocking native image zoom & long press popups */}
-                  <div className="absolute inset-0 z-10 select-none touch-none" onContextMenu={(e) => e.preventDefault()} />
+                  {/* Transparent touch shield blocking native image zoom & long press popups without blocking scroll */}
+                  <div className="absolute inset-0 z-10 pointer-events-none select-none" onContextMenu={(e) => e.preventDefault()} />
                 </div>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function TheCouple() {
           transition={{ duration: 0.8 }}
           className="rounded-3xl bg-gradient-to-br from-[#064E3B] to-[#0A5C36] text-white border-2 border-[#D4AF37] p-8 sm:p-12 text-center max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-10 rotate-slow">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-10 rotate-slow transform-gpu will-change-transform">
             <Islamic8PointStar className="w-[450px] h-[450px] text-[#D4AF37]" />
           </div>
 

@@ -36,7 +36,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#022C22] text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#FAF6EE] relative font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-[#022C22] text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#FAF6EE] relative font-sans overflow-x-clip">
       {/* Truly Fixed Sticky Top Header Navbar (Anchored directly to viewport screen) */}
       {currentPage === "invitation" && <Navbar />}
 

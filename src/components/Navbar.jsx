@@ -65,8 +65,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-2 ${
         scrolled
-          ? "bg-[#022C22]/95 backdrop-blur-md border-b border-[#D4AF37]/50 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
-          : "bg-gradient-to-b from-[#022C22]/90 via-[#064E3B]/60 to-transparent backdrop-blur-xs"
+          ? "bg-[#022C22]/98 border-b border-[#D4AF37]/50 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
+          : "bg-gradient-to-b from-[#022C22] via-[#064E3B]/80 to-transparent"
       }`}
     >
       <div

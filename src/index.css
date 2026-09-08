@@ -34,12 +34,9 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     background-color: #022C22;
     color: #FAF6EE;
-    touch-action: pan-y;
     -webkit-text-size-adjust: 100%;
-    -webkit-overflow-scrolling: touch;
   }
   
   body {
@@ -48,16 +45,14 @@
     padding: 0;
     background-color: #022C22 !important;
     color: #FAF6EE !important;
-    touch-action: pan-y;
     -webkit-text-size-adjust: 100%;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: clip;
   }
 
   img {
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
-    touch-action: pan-y;
     pointer-events: none;
   }
 
