@@ -32,14 +32,11 @@ export default function LandingSplash({ onEnter }) {
         transition={{ duration: 1.2, delay: 0.2 }}
         className="my-auto py-10 px-8 sm:px-16 rounded-3xl bg-[#064E3B]/95 backdrop-blur-md border-2 border-[#D4AF37] shadow-[0_15px_50px_rgba(0,0,0,0.6)] max-w-lg w-full z-10 flex flex-col items-center relative overflow-hidden"
       >
-        {/* Dynamic Rotating Geometric Pattern (Aligned Cleanly Inside Card) */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-30 rotate-slow">
-          <Islamic8PointStar className="w-[420px] h-[420px] sm:w-[480px] sm:h-[480px] text-[#D4AF37]" />
+        {/* Dynamic Rotating Geometric Pattern (Enlarged Size with Subtle Opacity for Crystal Clear Text Legibility) */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow">
+          <Islamic8PointStar className="w-[550px] h-[550px] sm:w-[650px] sm:h-[650px] text-[#D4AF37]" />
         </div>
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 rotate-slow-reverse">
-          <Islamic8PointStar className="w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] text-[#FFF5D6]" />
-        </div>
-        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.25)_0%,transparent_75%)]" />
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.15)_0%,transparent_75%)]" />
 
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />

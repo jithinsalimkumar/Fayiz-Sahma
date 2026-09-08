@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Navigation, CalendarPlus } from "lucide-react";
+import { Calendar, Clock, MapPin, Navigation, CalendarPlus, Share2 } from "lucide-react";
 import { weddingData } from "../config/weddingData";
 import { IslamicArchDivider, CardCornerFiligree } from "./IslamicPatternBg";
 
 export default function EventCard() {
-  const { wedding, venue, addToCalendarLink, images } = weddingData;
+  const { wedding, venue, addToCalendarLink, images, groom, bride } = weddingData;
+  const [shared, setShared] = useState(false);
+
+  const handleShareSite = async () => {
+    const shareData = {
+      title: `${groom.shortName} & ${bride.shortName}'s Wedding Invitation`,
+      text: `You are cordially invited to celebrate the wedding ceremony of ${groom.name} & ${bride.name}.`,
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        console.log("Web Share cancelled", err);
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      setShared(true);
+      setTimeout(() => setShared(false), 2500);
+    }
+  };
 
   return (
     <section
@@ -122,26 +143,37 @@ export default function EventCard() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-[#D4AF37]/30">
-              <a
-                href={venue.mapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#022C22] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md group cursor-pointer"
-              >
-                <Navigation className="w-4 h-4 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
-                <span>Get Directions</span>
-              </a>
+            <div className="flex flex-col gap-3 pt-4 border-t border-[#D4AF37]/30">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href={venue.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#022C22] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md group cursor-pointer"
+                >
+                  <Navigation className="w-4 h-4 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
+                  <span>Get Directions</span>
+                </a>
 
-              <a
-                href={addToCalendarLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
+                <a
+                  href={addToCalendarLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
+                >
+                  <CalendarPlus className="w-4 h-4 text-[#D4AF37]" />
+                  <span>Add to Calendar</span>
+                </a>
+              </div>
+
+              {/* Share Invitation Button below Add to Calendar */}
+              <button
+                onClick={handleShareSite}
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-gradient-to-r from-[#064E3B] via-[#0A5C36] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md cursor-pointer"
               >
-                <CalendarPlus className="w-4 h-4 text-[#D4AF37]" />
-                <span>Add to Calendar</span>
-              </a>
+                <Share2 className="w-4 h-4 text-[#D4AF37]" />
+                <span>{shared ? "Link Copied!" : "Share Invitation"}</span>
+              </button>
             </div>
           </div>
         </motion.div>
