@@ -76,7 +76,7 @@ export default function TheCouple() {
               The Groom
             </span>
 
-            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
               {groom.name}
             </h3>
 
@@ -130,7 +130,7 @@ export default function TheCouple() {
               The Bride
             </span>
 
-            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
               {bride.name}
             </h3>
 
