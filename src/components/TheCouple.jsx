@@ -9,7 +9,7 @@ export default function TheCouple() {
   return (
     <section
       id="couple"
-      className="py-24 px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden"
+      className="py-24 px-3 sm:px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Section Header */}
@@ -43,7 +43,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 p-4 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
@@ -76,7 +76,7 @@ export default function TheCouple() {
               The Groom
             </span>
 
-            <h3 className="font-allura text-lg min-[360px]:text-xl min-[400px]:text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide px-1">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
               {groom.name}
             </h3>
 
@@ -97,7 +97,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 p-4 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#043327]/90 backdrop-blur-md border border-[#D4AF37]/40 py-6 px-2 sm:p-8 lg:p-10 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
@@ -130,7 +130,7 @@ export default function TheCouple() {
               The Bride
             </span>
 
-            <h3 className="font-allura text-lg min-[360px]:text-xl min-[400px]:text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide px-1">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-2 leading-tight whitespace-nowrap tracking-wide">
               {bride.name}
             </h3>
 
