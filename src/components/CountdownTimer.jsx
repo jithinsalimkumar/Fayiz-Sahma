@@ -43,7 +43,7 @@ export default function CountdownTimer() {
   return (
     <section
       id="countdown"
-      className="py-24 px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
+      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto w-full z-10">
         {/* Title */}
@@ -52,7 +52,7 @@ export default function CountdownTimer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-2"
+          className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-1.5"
         >
           Counting Down The Blessed Moments
         </motion.span>
@@ -61,15 +61,15 @@ export default function CountdownTimer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-4xl sm:text-5xl text-[#FAF6EE] font-bold"
+          className="font-serif text-3xl sm:text-5xl text-[#FAF6EE] font-bold"
         >
           Until The Wedding Reception
         </motion.h2>
 
-        <IslamicArchDivider className="my-6" />
+        <IslamicArchDivider className="my-4" />
 
         {/* Centerpiece Gold-on-Emerald Pulsing Numerals Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 max-w-3xl mx-auto my-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto my-6">
           {timeUnits.map((unit, index) => (
             <motion.div
               key={unit.label}
@@ -77,10 +77,10 @@ export default function CountdownTimer() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center justify-center p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] gold-pulse-glow shadow-xl relative overflow-hidden group"
+              className="flex flex-col items-center justify-center p-4 sm:p-6 rounded-3xl bg-gradient-to-b from-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] gold-pulse-glow shadow-xl relative overflow-hidden group"
             >
               {/* Gold Shimmer Number Display */}
-              <div className="h-16 sm:h-20 flex items-center justify-center overflow-hidden">
+              <div className="h-14 sm:h-18 flex items-center justify-center overflow-hidden">
                 <AnimatePresence mode="popLayout">
                   <motion.span
                     key={unit.value}
@@ -88,14 +88,14 @@ export default function CountdownTimer() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="font-serif text-4xl sm:text-5xl md:text-6xl font-extrabold gold-shimmer-text tracking-tight"
+                    className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold gold-shimmer-text tracking-tight"
                   >
                     {String(unit.value).padStart(2, "0")}
                   </motion.span>
                 </AnimatePresence>
               </div>
 
-              <span className="text-xs uppercase tracking-[0.25em] font-bold text-[#FCD34D] mt-2">
+              <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#FCD34D] mt-1.5">
                 {unit.label}
               </span>
             </motion.div>

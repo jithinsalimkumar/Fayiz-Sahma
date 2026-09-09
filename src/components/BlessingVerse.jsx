@@ -9,7 +9,7 @@ export default function BlessingVerse() {
   return (
     <section
       id="verse"
-      className="py-24 px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
+      className="py-12 sm:py-16 px-4 sm:px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       {/* Animated geometric star pattern backdrop */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow transform-gpu will-change-transform">
@@ -22,24 +22,24 @@ export default function BlessingVerse() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="p-8 sm:p-14 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37]/60 shadow-[0_15px_45px_rgba(0,0,0,0.5)] relative"
+          className="p-6 sm:p-12 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37]/60 shadow-[0_15px_45px_rgba(0,0,0,0.5)] relative"
         >
           {/* Corner Flourish Markers */}
           <CardCornerFiligree />
 
-          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] mb-6 block">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] mb-3 block">
             Quranic Blessing
           </span>
 
           {/* Arabic Verse */}
-          <p className="font-arabic text-2xl sm:text-3xl md:text-4xl text-[#D4AF37] arabic-gold leading-loose mb-6 font-normal px-2">
+          <p className="font-arabic text-2xl sm:text-3xl md:text-4xl text-[#D4AF37] arabic-gold leading-loose mb-4 font-normal px-2">
             {quranicVerse.arabic}
           </p>
 
-          <IslamicArchDivider className="my-6" />
+          <IslamicArchDivider className="my-4" />
 
           {/* English Translation */}
-          <p className="font-serif text-lg sm:text-xl text-[#FCD34D] italic leading-relaxed max-w-2xl mx-auto mb-6 font-normal">
+          <p className="font-serif text-base sm:text-xl text-[#FCD34D] italic leading-relaxed max-w-2xl mx-auto mb-4 font-normal">
             "{quranicVerse.translation}"
           </p>
 
