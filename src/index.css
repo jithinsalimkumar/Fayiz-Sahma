@@ -170,19 +170,16 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Completely Hide Scrollbar Across All Browsers & Mobile Devices */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
+  height: 0px;
+  display: none;
 }
-::-webkit-scrollbar-track {
-  background: #160420;
-}
-::-webkit-scrollbar-thumb {
-  background: #E8D4C5;
-  border-radius: 9999px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #CBA68D;
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Slow rotation animation for Islamic star geometric overlays */
