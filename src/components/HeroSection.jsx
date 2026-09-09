@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[85vh] sm:min-h-screen pt-20 sm:pt-24 pb-10 sm:pb-12 px-4 sm:px-6 flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] overflow-hidden"
+      className="relative min-h-[85vh] sm:min-h-screen py-14 sm:py-24 px-4 sm:px-6 flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] overflow-hidden"
     >
       {/* Background Rotating Star Pattern */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow transform-gpu will-change-transform">
