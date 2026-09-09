@@ -21,29 +21,28 @@ export default function LandingSplash({ onEnter }) {
       animate={{ opacity: isOpening ? 0 : 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="fixed inset-0 w-full h-full h-[100dvh] flex flex-col items-center justify-center p-4 sm:p-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-center overflow-y-auto md:overflow-hidden z-50 select-none"
+      className="fixed inset-0 w-full h-full min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-center overflow-y-auto md:overflow-hidden z-50 select-none"
     >
-      <div className="w-full max-w-lg flex flex-col items-center justify-center py-2">
-        {/* Top Bismillah Calligraphy */}
-        <motion.div
-          animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -30 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="mb-3 sm:mb-4 z-10 flex-shrink-0"
-        >
-          <p className="font-arabic text-2xl sm:text-3xl md:text-2xl lg:text-3xl text-[#E8D4C5] arabic-gold tracking-wider mb-1 font-normal leading-relaxed">
-            {bismillah.arabic}
-          </p>
-          <p className="text-[11px] sm:text-xs tracking-[0.25em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
-            {bismillah.translation}
-          </p>
-        </motion.div>
+      {/* Top Bismillah Calligraphy */}
+      <motion.div
+        animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -30 : 0 }}
+        transition={{ duration: 0.3 }}
+        className="pt-2 sm:pt-4 mb-4 md:mb-3 z-10 flex-shrink-0"
+      >
+        <p className="font-arabic text-2xl sm:text-3xl md:text-2xl lg:text-3xl text-[#E8D4C5] arabic-gold tracking-wider mb-1.5 font-normal leading-relaxed">
+          {bismillah.arabic}
+        </p>
+        <p className="text-xs tracking-[0.25em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
+          {bismillah.translation}
+        </p>
+      </motion.div>
 
-        {/* Central Card Container */}
-        <motion.div
-          animate={{ opacity: isOpening ? 0 : 1, scale: isOpening ? 0.95 : 1 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          className="py-5 sm:py-8 md:py-6 lg:py-8 px-4 sm:px-12 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/80 shadow-[0_15px_50px_rgba(0,0,0,0.7)] max-w-lg w-full z-10 flex flex-col items-center relative flex-shrink md:max-h-[calc(100vh-120px)] justify-center"
-        >
+      {/* Central Card Container */}
+      <motion.div
+        animate={{ opacity: isOpening ? 0 : 1, scale: isOpening ? 0.95 : 1 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="py-8 md:py-6 lg:py-8 px-6 sm:px-12 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/80 shadow-[0_15px_50px_rgba(0,0,0,0.7)] max-w-lg w-full z-10 flex flex-col items-center relative flex-shrink md:max-h-[calc(100vh-120px)] justify-center"
+      >
         {/* Dynamic Rotating Geometric Pattern (Clipped to card bounds) */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow transform-gpu will-change-transform overflow-hidden rounded-3xl">
           <Islamic8PointStar className="w-[550px] h-[550px] sm:w-[600px] sm:h-[600px] text-[#E8D4C5]" />
@@ -107,7 +106,6 @@ export default function LandingSplash({ onEnter }) {
           </div>
         </motion.div>
       </motion.div>
-    </div>
-  </motion.section>
+    </motion.section>
   );
 }
