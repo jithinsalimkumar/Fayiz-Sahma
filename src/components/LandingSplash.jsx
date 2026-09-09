@@ -21,13 +21,13 @@ export default function LandingSplash({ onEnter }) {
       animate={{ opacity: isOpening ? 0 : 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="fixed inset-0 w-full h-full flex flex-col justify-between items-center px-6 py-12 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-center overflow-hidden z-50"
+      className="fixed inset-0 w-full h-full flex flex-col items-center justify-center px-4 sm:px-6 py-6 sm:py-10 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-center overflow-y-auto z-50"
     >
       {/* Top Bismillah Calligraphy */}
       <motion.div
         animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -30 : 0 }}
         transition={{ duration: 0.3 }}
-        className="pt-6 mb-3 sm:mb-4 z-10"
+        className="pt-2 sm:pt-4 mb-4 sm:mb-6 z-10"
       >
         <p className="font-arabic text-2xl sm:text-3xl text-[#D4AF37] arabic-gold tracking-wider mb-2 font-normal leading-relaxed">
           {bismillah.arabic}
@@ -41,7 +41,7 @@ export default function LandingSplash({ onEnter }) {
       <motion.div
         animate={{ opacity: isOpening ? 0 : 1, scale: isOpening ? 0.95 : 1 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="my-auto py-10 px-8 sm:px-16 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37] shadow-[0_15px_50px_rgba(0,0,0,0.6)] max-w-lg w-full z-10 flex flex-col items-center relative"
+        className="py-8 sm:py-10 px-6 sm:px-12 rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37] shadow-[0_15px_50px_rgba(0,0,0,0.6)] max-w-lg w-full z-10 flex flex-col items-center relative"
       >
         {/* Dynamic Rotating Geometric Pattern (Clipped to card bounds) */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow transform-gpu will-change-transform overflow-hidden rounded-3xl">
