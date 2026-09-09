@@ -16,7 +16,7 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           className="mb-4"
         >
-          <p className="font-arabic text-3xl sm:text-4xl text-[#D4AF37] arabic-gold tracking-wider font-bold leading-relaxed">
+          <p className="font-arabic text-2xl sm:text-3xl text-[#D4AF37] arabic-gold tracking-wider font-normal leading-relaxed">
             جَزَاكُمُ ٱللَّٰهُ خَيْرً۠ا
           </p>
         </motion.div>
@@ -36,19 +36,27 @@ export default function Footer() {
         {/* 4. Fine Horizontal Gold Accent Divider */}
         <div className="w-full max-w-3xl border-t border-[#D4AF37]/30 my-8 opacity-70" />
 
-        {/* 5. Bottom Hashtag, Made With Love & Copyright Line */}
+        {/* 5. Bottom 3-Line Footer Section: Hashtag, Made with Dua & Copyright Line */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.35 }}
-          className="flex flex-col items-center gap-2 text-xs text-[#D4AF37]/80 font-sans tracking-[0.15em] font-medium"
+          className="flex flex-col items-center gap-2 font-sans"
         >
-          <p className="flex items-center gap-1.5 flex-wrap justify-center">
-            <span>{hashtag || "#FayizWedsSahma"}</span>
-            <span className="text-[#D4AF37]/40">•</span>
-            <span>Made with <span className="text-red-500 inline-block animate-pulse">❤️</span> and Dua</span>
+          {/* Line 1: Hashtag */}
+          <p className="text-xs text-[#D4AF37] font-bold tracking-[0.25em]">
+            {hashtag || "#FayizWedsSahma"}
           </p>
+
+          {/* Line 2: Made with Love & Dua */}
+          <p className="text-xs text-[#D4AF37]/90 font-medium tracking-[0.15em] flex items-center justify-center gap-1.5">
+            <span>Made with</span>
+            <span className="text-red-500 inline-block animate-pulse">❤️</span>
+            <span>and Dua</span>
+          </p>
+
+          {/* Line 3: Copyright */}
           <p className="text-[11px] text-[#D4AF37]/60 tracking-[0.2em] uppercase mt-1">
             © 2026 All Rights Reserved
           </p>

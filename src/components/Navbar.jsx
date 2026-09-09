@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import FSMonogramCalligraphy from "./FSMonogramCalligraphy";
 
 // Reusable 24K Gold Ornamental Divider SVG (Left side orientation)
@@ -51,7 +52,7 @@ function GoldDividerSVG() {
 
 export default function Navbar() {
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-6">
+    <header className="absolute top-0 left-0 right-0 z-40 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-6">
       <div className="w-full max-w-5xl flex items-center justify-between pointer-events-auto px-2 sm:px-6">
         {/* Left Side Ornamental 24K Gold Royal Divider */}
         <div className="flex-1 flex items-center justify-end pr-2 sm:pr-4 overflow-hidden">
@@ -59,11 +60,14 @@ export default function Navbar() {
         </div>
 
         {/* Central Monogram Crest */}
-        <a href="#hero" className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-2">
+        <a
+          href="#hero"
+          className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-2"
+        >
           <FSMonogramCalligraphy className="h-10 sm:h-14 w-auto" />
         </a>
 
-        {/* Right Side Ornamental 24K Gold Royal Divider (Horizontally Mirrored for 100% Symmetrical Balance) */}
+        {/* Right Side Ornamental 24K Gold Royal Divider (Horizontally Mirrored) */}
         <div className="flex-1 flex items-center justify-start pl-2 sm:pl-4 overflow-hidden">
           <div className="w-full flex items-center justify-start max-w-[300px] scale-x-[-1]">
             <GoldDividerSVG />

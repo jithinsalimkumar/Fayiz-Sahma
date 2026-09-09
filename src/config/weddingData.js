@@ -12,14 +12,14 @@ export const weddingData = {
   coupleInitials: "F & S",
 
   groom: {
-    name: "Muhammed Fayiz. MT",
+    name: "Muhammed Fayiz M.T.",
     shortName: "Fayiz",
     lineageLine: "Son of Abdul Majeed MT & Fathima KK",
     photo: "/images/groom.jpg",
   },
 
   bride: {
-    name: "Sahma. AK",
+    name: "Sahma A.K.",
     shortName: "Sahma",
     lineageLine: "Daughter of Abdul Muthalib AK & Rahmabi N",
     photo: "/images/bride.jpg",
@@ -45,11 +45,11 @@ export const weddingData = {
     mapEmbedUrl: "https://maps.google.com/maps?q=Rose+Hill+Auditorium+Cherukode+Manjeri+Road+Malappuram+Kerala+679328&t=&z=15&ie=UTF8&iwloc=&output=embed",
   },
 
-  addToCalendarLink: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Muhammed+Fayiz.+MT+%26+Sahma.+AK%27s+Wedding+Reception&dates=20261011T113000Z/20261011T143000Z&details=Wedding+Reception+of+Muhammed+Fayiz.+MT+and+Sahma.+AK.&location=Rose+Hill+Auditorium%2C+Cherukode%2C+Manjeri+Road%2C+Malappuram%2C+Kerala+-+679328",
+  addToCalendarLink: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Muhammed+Fayiz+M.T.+%26+Sahma+A.K.%27s+Wedding+Reception&dates=20261011T113000Z/20261011T143000Z&details=Wedding+Reception+of+Muhammed+Fayiz+M.T.+and+Sahma+A.K.&location=Rose+Hill+Auditorium%2C+Cherukode%2C+Manjeri+Road%2C+Malappuram%2C+Kerala+-+679328",
 
   quranicVerse: {
-    arabic: "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً",
-    translation: "And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them; and He placed between you affection and mercy.",
+    arabic: "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً...",
+    translation: "And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them; and He placed between you affection and mercy...",
     reference: "Surah Ar-Rum [30:21]",
   },
 

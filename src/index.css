@@ -9,7 +9,7 @@
   --font-running: "Alex Brush", "Great Vibes", "Pinyon Script", cursive;
   --font-cormorant: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-arabic: "Aref Ruqaa", "Amiri Quran", "Amiri", "Reem Kufi", serif;
+  --font-arabic: "Scheherazade New", "Amiri", "Amiri Quran", "Reem Kufi", serif;
 
   --color-emerald-950: #022C22;
   --color-emerald-900: #064E3B;
@@ -111,6 +111,7 @@
   .font-arabic {
     font-family: var(--font-arabic);
     direction: rtl;
+    font-weight: 400;
   }
 }
 

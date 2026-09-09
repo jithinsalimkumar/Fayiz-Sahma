@@ -47,7 +47,7 @@ export default function ClosingSection() {
           <IslamicArchDivider className="mb-6" />
 
           {/* Closing Dua Arabic */}
-          <p className="font-arabic text-3xl sm:text-4xl text-[#D4AF37] arabic-gold leading-loose mb-4 font-bold">
+          <p className="font-arabic text-2xl sm:text-3xl text-[#D4AF37] arabic-gold leading-loose mb-4 font-normal">
             {closingMessage.arabic}
           </p>
 

@@ -26,7 +26,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <p className="font-arabic text-3xl sm:text-5xl text-[#D4AF37] arabic-gold tracking-wider mb-2 font-bold leading-relaxed">
+          <p className="font-arabic text-2xl sm:text-4xl text-[#D4AF37] arabic-gold tracking-wider mb-2 font-normal leading-relaxed">
             {bismillah.arabic}
           </p>
           <p className="text-xs tracking-[0.25em] uppercase font-medium text-[#FCD34D]">

@@ -32,7 +32,7 @@ export default function BlessingVerse() {
           </span>
 
           {/* Arabic Verse */}
-          <p className="font-arabic text-3xl sm:text-4xl md:text-5xl text-[#D4AF37] arabic-gold leading-loose mb-6 font-bold px-2">
+          <p className="font-arabic text-2xl sm:text-3xl md:text-4xl text-[#D4AF37] arabic-gold leading-loose mb-6 font-normal px-2">
             {quranicVerse.arabic}
           </p>
 
