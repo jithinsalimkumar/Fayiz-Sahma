@@ -41,24 +41,24 @@ export default function LandingSplash({ onEnter }) {
         {/* Corner Islamic Geometric Accents */}
         <CardCornerFiligree />
 
-        {/* Monogram Crest - Custom Royal Gold Monogram Medallion */}
-        <div className="mb-6 z-10 hover:scale-105 transition-transform cursor-pointer">
-          <FSMonogramCalligraphy className="w-36 h-36 sm:w-44 sm:h-44 drop-shadow-[0_12px_35px_rgba(212,175,55,0.5)]" />
+        {/* Monogram Crest - Custom Royal Gold Monogram Standalone Calligraphy */}
+        <div className="my-2 z-10 hover:scale-105 transition-transform cursor-pointer flex items-center justify-center">
+          <FSMonogramCalligraphy className="h-28 sm:h-36 w-auto" />
         </div>
 
-        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37] mb-3 z-10">
+        <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] bg-[#D4AF37]/10 px-4 py-1.5 rounded-full border border-[#D4AF37]/40 my-3 z-10 shadow-xs">
           The Wedding Reception
         </span>
 
-        {/* Couple First Names with Original Display Typography */}
-        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-[#FAF6EE] font-bold tracking-wider mb-2 leading-tight z-10">
+        {/* Couple First Names with Gold Shimmer Typography */}
+        <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#FAF6EE] font-bold tracking-wider my-2 leading-tight z-10 gold-shimmer-text">
           {groom.shortName} <span className="font-script text-[#D4AF37] font-normal text-4xl sm:text-5xl mx-1.5">&amp;</span> {bride.shortName}
         </h1>
 
-        <IslamicArchDivider className="my-4 z-10" />
+        <IslamicArchDivider className="my-3 z-10" />
 
         {/* Wedding Date */}
-        <p className="font-sans text-sm sm:text-base text-[#FCD34D] tracking-wider font-semibold z-10">
+        <p className="font-serif text-sm sm:text-base text-[#FCD34D] tracking-wider font-semibold z-10">
           {wedding.displayDate}
         </p>
       </motion.div>

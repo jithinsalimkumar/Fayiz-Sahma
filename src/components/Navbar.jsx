@@ -81,9 +81,9 @@ export default function Navbar() {
           <GoldDividerSVG />
         </div>
 
-        {/* Central Monogram Circle Emblem */}
+        {/* Central Monogram Crest */}
         <a href="#hero" className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-1">
-          <FSMonogramCalligraphy className="w-14 h-14 sm:w-18 sm:h-18" />
+          <FSMonogramCalligraphy className="h-10 sm:h-12 w-auto" />
         </a>
 
         {/* Right Side Ornamental 24K Gold Royal Divider (Horizontally Mirrored for 100% Symmetrical Balance) */}
