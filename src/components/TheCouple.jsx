@@ -9,11 +9,11 @@ export default function TheCouple() {
   return (
     <section
       id="couple"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden"
+      className="py-12 sm:py-16 max-h-[520px]:py-8 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Section Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 max-h-[520px]:mb-4">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -28,27 +28,27 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-3xl sm:text-5xl text-[#FAF2ED] font-bold"
+            className="font-serif text-3xl sm:text-5xl max-h-[520px]:text-3xl text-[#FAF2ED] font-bold"
           >
             The Blessed Couple
           </motion.h2>
-          <IslamicArchDivider className="my-3" />
+          <IslamicArchDivider className="my-3 max-h-[520px]:my-1.5" />
         </div>
 
         {/* Groom & Bride Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-10 max-h-[520px]:mb-6">
           {/* Groom Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 max-h-[520px]:py-4 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
             {/* Simple & Classy Islamic Arch Frame */}
-            <div className="relative w-56 h-72 sm:w-64 sm:h-80 mb-5 flex flex-col items-center pt-3">
+            <div className="relative w-56 h-72 sm:w-64 sm:h-80 max-h-[520px]:w-44 max-h-[520px]:h-56 mb-5 max-h-[520px]:mb-3 flex flex-col items-center pt-3">
               {/* Refined 8-Point Star Apex Ornament */}
               <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#20062E] border-2 border-[#E8D4C5] flex items-center justify-center shadow-lg">
                 <Islamic8PointStar className="w-3.5 h-3.5 text-[#F5E6DC]" />
@@ -97,12 +97,12 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 max-h-[520px]:py-4 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
             {/* Simple & Classy Islamic Arch Frame */}
-            <div className="relative w-56 h-72 sm:w-64 sm:h-80 mb-5 flex flex-col items-center pt-3">
+            <div className="relative w-56 h-72 sm:w-64 sm:h-80 max-h-[520px]:w-44 max-h-[520px]:h-56 mb-5 max-h-[520px]:mb-3 flex flex-col items-center pt-3">
               {/* Refined 8-Point Star Apex Ornament */}
               <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#20062E] border-2 border-[#E8D4C5] flex items-center justify-center shadow-lg">
                 <Islamic8PointStar className="w-3.5 h-3.5 text-[#F5E6DC]" />

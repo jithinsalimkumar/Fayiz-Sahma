@@ -31,11 +31,11 @@ export default function EventCard() {
   return (
     <section
       id="event"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden"
+      className="py-12 sm:py-16 max-h-[520px]:py-8 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto w-full">
         {/* Section Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 max-h-[520px]:mb-4">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,11 +50,11 @@ export default function EventCard() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-3xl sm:text-5xl text-[#FAF2ED] font-bold"
+            className="font-serif text-3xl sm:text-5xl max-h-[520px]:text-3xl text-[#FAF2ED] font-bold"
           >
             Wedding Reception
           </motion.h2>
-          <IslamicArchDivider className="my-3" />
+          <IslamicArchDivider className="my-3 max-h-[520px]:my-1.5" />
         </div>
 
         {/* Main Event Card */}
@@ -67,7 +67,7 @@ export default function EventCard() {
         >
           <CardCornerFiligree />
           {/* Venue Image */}
-          <div className="lg:w-1/2 relative min-h-[250px] lg:min-h-[420px]">
+          <div className="lg:w-1/2 relative min-h-[250px] lg:min-h-[420px] max-h-[520px]:min-h-[160px]">
             <img
               src={images.venuePhoto || venue.photo}
               alt={venue.name}
@@ -82,7 +82,7 @@ export default function EventCard() {
           </div>
 
           {/* Details & Interactive Map */}
-          <div className="lg:w-1/2 p-6 sm:p-8 flex flex-col justify-between text-left">
+          <div className="lg:w-1/2 p-6 sm:p-8 max-h-[520px]:p-4 flex flex-col justify-between text-left">
             <div>
               <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#E8D4C5] bg-[#E8D4C5]/10 px-3 py-1 rounded-full mb-3 inline-block">
                 Location &amp; Timings
