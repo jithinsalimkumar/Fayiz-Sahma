@@ -12,14 +12,14 @@ export const weddingData = {
   coupleInitials: "F & S",
 
   groom: {
-    name: "Muhammed Fayiz M.T.",
+    name: "Muhammed Fayiz MT",
     shortName: "Fayiz",
     lineageLine: "Son of Abdul Majeed MT & Fathima KK",
     photo: "/images/groom.jpg",
   },
 
   bride: {
-    name: "Sahma A.K.",
+    name: "Sahma AK",
     shortName: "Sahma",
     lineageLine: "Daughter of Abdul Muthalib AK & Rahmabi N",
     photo: "/images/bride.jpg",
