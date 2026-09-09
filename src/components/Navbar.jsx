@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import FSMonogramCalligraphy from "./FSMonogramCalligraphy";
 
 // Reusable 24K Gold Ornamental Divider SVG (Left side orientation)
@@ -50,44 +50,21 @@ function GoldDividerSVG() {
 }
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 30;
-      setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-2 ${
-        scrolled
-          ? "bg-[#022C22]/98 border-b border-[#D4AF37]/50 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
-          : "bg-gradient-to-b from-[#022C22] via-[#064E3B]/80 to-transparent"
-      }`}
-    >
-      <div
-        className={`w-full max-w-5xl flex items-center justify-between pointer-events-auto py-1 px-3 sm:px-6 rounded-full transition-all duration-300 ${
-          scrolled
-            ? "bg-[#064E3B]/95 border border-[#D4AF37]/50 shadow-lg scale-95"
-            : "bg-[#064E3B]/85 border border-[#D4AF37]/40 shadow-md scale-100"
-        }`}
-      >
+    <header className="absolute top-0 left-0 right-0 z-50 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-6">
+      <div className="w-full max-w-5xl flex items-center justify-between pointer-events-auto px-2 sm:px-6">
         {/* Left Side Ornamental 24K Gold Royal Divider */}
-        <div className="flex-1 flex items-center justify-end pr-1 sm:pr-3 overflow-hidden">
+        <div className="flex-1 flex items-center justify-end pr-2 sm:pr-4 overflow-hidden">
           <GoldDividerSVG />
         </div>
 
         {/* Central Monogram Crest */}
-        <a href="#hero" className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-1">
-          <FSMonogramCalligraphy className="h-10 sm:h-12 w-auto" />
+        <a href="#hero" className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-2">
+          <FSMonogramCalligraphy className="h-10 sm:h-14 w-auto" />
         </a>
 
         {/* Right Side Ornamental 24K Gold Royal Divider (Horizontally Mirrored for 100% Symmetrical Balance) */}
-        <div className="flex-1 flex items-center justify-start pl-1 sm:pl-3 overflow-hidden">
+        <div className="flex-1 flex items-center justify-start pl-2 sm:pl-4 overflow-hidden">
           <div className="w-full flex items-center justify-start max-w-[300px] scale-x-[-1]">
             <GoldDividerSVG />
           </div>
