@@ -8,15 +8,15 @@ function GoldDividerSVG() {
     <svg className="w-full h-8 max-w-[300px]" viewBox="0 0 240 30" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="navGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.1" />
-          <stop offset="25%" stopColor="#D4AF37" stopOpacity="0.6" />
-          <stop offset="60%" stopColor="#FFF4D0" stopOpacity="1" />
-          <stop offset="100%" stopColor="#D4AF37" stopOpacity="1" />
+          <stop offset="0%" stopColor="#E8D4C5" stopOpacity="0.1" />
+          <stop offset="25%" stopColor="#E8D4C5" stopOpacity="0.6" />
+          <stop offset="60%" stopColor="#FFF0E6" stopOpacity="1" />
+          <stop offset="100%" stopColor="#CBA68D" stopOpacity="1" />
         </linearGradient>
       </defs>
 
-      {/* Main Left Gold Ornamental Flourish Group */}
-      <g className="drop-shadow-[0_2px_6px_rgba(212,175,55,0.6)]">
+      {/* Main Left Champagne Rose Gold Flourish Group */}
+      <g className="drop-shadow-[0_2px_6px_rgba(232,212,197,0.6)]">
         {/* Main Line extending to center emblem */}
         <path
           d="M 0 15 H 65 Q 90 3, 115 15 T 165 15 H 240"
@@ -41,9 +41,9 @@ function GoldDividerSVG() {
         <circle cx="35" cy="15" r="1.8" fill="url(#navGoldGrad)" />
         <circle cx="195" cy="15" r="1.8" fill="url(#navGoldGrad)" />
 
-        {/* Royal 24K Gold Diamond Medallion */}
+        {/* Royal Diamond Medallion */}
         <polygon points="115,4 124,15 115,26 106,15" fill="url(#navGoldGrad)" />
-        <polygon points="115,8 120,15 115,22 110,15" fill="#022C22" />
+        <polygon points="115,8 120,15 115,22 110,15" fill="#160420" />
         <polygon points="115,11 117.5,15 115,19 112.5,15" fill="url(#navGoldGrad)" />
       </g>
     </svg>

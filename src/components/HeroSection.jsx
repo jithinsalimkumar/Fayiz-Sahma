@@ -10,11 +10,11 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[85vh] sm:min-h-screen pt-20 sm:pt-24 pb-10 sm:pb-12 px-4 sm:px-6 flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] overflow-hidden"
+      className="relative min-h-[85vh] sm:min-h-screen pt-20 sm:pt-24 pb-10 sm:pb-12 px-4 sm:px-6 flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] overflow-hidden"
     >
       {/* Background Rotating Star Pattern */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow transform-gpu will-change-transform">
-        <Islamic8PointStar className="w-[700px] h-[700px] text-[#D4AF37]" />
+        <Islamic8PointStar className="w-[700px] h-[700px] text-[#E8D4C5]" />
       </div>
 
       <div className="max-w-4xl mx-auto w-full z-10 flex flex-col items-center">
@@ -26,10 +26,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="mb-4"
         >
-          <p className="font-arabic text-2xl sm:text-4xl text-[#D4AF37] arabic-gold tracking-wider mb-2 font-normal leading-relaxed">
+          <p className="font-arabic text-2xl sm:text-4xl text-[#E8D4C5] arabic-gold tracking-wider mb-2 font-normal leading-relaxed">
             {bismillah.arabic}
           </p>
-          <p className="text-xs tracking-[0.25em] uppercase font-medium text-[#FCD34D]">
+          <p className="text-xs tracking-[0.25em] uppercase font-medium text-[#F5E6DC]">
             {bismillah.translation}
           </p>
         </motion.div>
@@ -42,11 +42,11 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] bg-[#D4AF37]/10 px-4 py-1.5 rounded-full border border-[#D4AF37]/40 mb-4"
+          className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-[#E8D4C5] bg-[#E8D4C5]/10 px-4 py-1.5 rounded-full border border-[#E8D4C5]/40 mb-4"
         >
-          <Sparkles className="w-3.5 h-3.5" />
+          <Sparkles className="w-3.5 h-3.5 text-[#E8D4C5]" />
           <span>The Wedding Reception</span>
-          <Sparkles className="w-3.5 h-3.5" />
+          <Sparkles className="w-3.5 h-3.5 text-[#E8D4C5]" />
         </motion.span>
 
         {/* Large Elegant Names with Animated Gold Shimmer Sweep */}
@@ -60,7 +60,7 @@ export default function HeroSection() {
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider gold-shimmer-text py-1">
             {groom.shortName}
           </h1>
-          <span className="font-script text-5xl sm:text-6xl text-[#D4AF37] font-normal my-0.5 md:my-0">
+          <span className="font-script text-5xl sm:text-6xl text-[#E8D4C5] font-normal my-0.5 md:my-0">
             &amp;
           </span>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider gold-shimmer-text py-1">
@@ -74,24 +74,24 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 max-w-2xl w-full my-6 py-4 px-5 rounded-2xl bg-[#064E3B]/95 border border-[#D4AF37]/60 shadow-xl"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 max-w-2xl w-full my-6 py-4 px-5 rounded-2xl bg-[#250A36]/95 border border-[#E8D4C5]/60 shadow-xl"
         >
           <div className="flex flex-col items-center">
-            <Calendar className="w-5 h-5 text-[#D4AF37] mb-1" />
-            <span className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-medium">Date</span>
-            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF6EE]">{wedding.displayDate}</span>
+            <Calendar className="w-5 h-5 text-[#E8D4C5] mb-1" />
+            <span className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-medium">Date</span>
+            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF2ED]">{wedding.displayDate}</span>
           </div>
 
-          <div className="flex flex-col items-center sm:border-x sm:border-[#D4AF37]/30 sm:px-4">
-            <Clock className="w-5 h-5 text-[#D4AF37] mb-1" />
-            <span className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-medium">Time</span>
-            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF6EE]">{wedding.displayTime}</span>
+          <div className="flex flex-col items-center sm:border-x sm:border-[#E8D4C5]/30 sm:px-4">
+            <Clock className="w-5 h-5 text-[#E8D4C5] mb-1" />
+            <span className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-medium">Time</span>
+            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF2ED]">{wedding.displayTime}</span>
           </div>
 
           <div className="flex flex-col items-center">
-            <MapPin className="w-5 h-5 text-[#D4AF37] mb-1" />
-            <span className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-medium">Venue</span>
-            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF6EE]">{venue.name}</span>
+            <MapPin className="w-5 h-5 text-[#E8D4C5] mb-1" />
+            <span className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-medium">Venue</span>
+            <span className="font-serif text-sm sm:text-base font-bold text-[#FAF2ED]">{venue.name}</span>
           </div>
         </motion.div>
       </div>

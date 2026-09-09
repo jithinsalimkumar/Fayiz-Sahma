@@ -9,7 +9,7 @@ export default function TheCouple() {
   return (
     <section
       id="couple"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden"
+      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Section Header */}
@@ -19,7 +19,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-1.5"
+            className="text-xs font-bold uppercase tracking-[0.3em] text-[#E8D4C5] block mb-1.5"
           >
             With The Grace Of Almighty
           </motion.span>
@@ -28,7 +28,7 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-3xl sm:text-5xl text-[#FAF6EE] font-bold"
+            className="font-serif text-3xl sm:text-5xl text-[#FAF2ED] font-bold"
           >
             The Blessed Couple
           </motion.h2>
@@ -43,21 +43,21 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/95 border border-[#D4AF37]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
             {/* Simple & Classy Islamic Arch Frame */}
             <div className="relative w-56 h-72 sm:w-64 sm:h-80 mb-5 flex flex-col items-center pt-3">
               {/* Refined 8-Point Star Apex Ornament */}
-              <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#043327] border-2 border-[#D4AF37] flex items-center justify-center shadow-lg">
-                <Islamic8PointStar className="w-3.5 h-3.5 text-[#FCD34D]" />
+              <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#20062E] border-2 border-[#E8D4C5] flex items-center justify-center shadow-lg">
+                <Islamic8PointStar className="w-3.5 h-3.5 text-[#F5E6DC]" />
               </div>
 
               {/* Clean Islamic Arch Outer Frame */}
-              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
+              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#E8D4C5] shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative bg-[#160420] group-hover:border-[#FFF0E6] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#E8D4C5]/40 overflow-hidden relative bg-[#160420] select-none">
                   <img
                     src={groom.photo}
                     alt={groom.name}
@@ -72,21 +72,21 @@ export default function TheCouple() {
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-2 shadow-md border border-[#FFF5D6]/40">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#160420] bg-gradient-to-r from-[#CBA68D] via-[#FFF0E6] to-[#E8D4C5] px-4 py-1 rounded-full mb-2 shadow-md border border-[#FFF0E6]/40">
               The Groom
             </span>
 
-            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-1 leading-tight whitespace-nowrap tracking-wide">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF0E6] drop-shadow-[0_4px_12px_rgba(232,212,197,0.4)] font-normal mb-1 leading-tight whitespace-nowrap tracking-wide">
               {groom.name}
             </h3>
 
             {/* Parentage Lineage Section */}
             <div className="mt-1 flex flex-col items-center">
-              <span className="text-[10px] sm:text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-0.5">
+              <span className="text-[10px] sm:text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#E8D4C5] mb-0.5">
                 Son Of
               </span>
-              <p className="font-cormorant text-base sm:text-lg text-[#FCD34D] italic leading-relaxed max-w-xs font-semibold">
-                Abdul Majeed MT <span className="font-script text-[#D4AF37] font-normal text-xl mx-1">&amp;</span> Fathima KK
+              <p className="font-cormorant text-base sm:text-lg text-[#F5E6DC] italic leading-relaxed max-w-xs font-semibold">
+                Abdul Majeed MT <span className="font-script text-[#E8D4C5] font-normal text-xl mx-1">&amp;</span> Fathima KK
               </p>
             </div>
           </motion.div>
@@ -97,21 +97,21 @@ export default function TheCouple() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="rounded-3xl bg-[#043327]/95 border border-[#D4AF37]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/80 transition-all duration-500"
+            className="rounded-3xl bg-[#20062E]/95 border border-[#E8D4C5]/40 py-6 px-4 sm:p-8 text-center flex flex-col items-center shadow-2xl relative overflow-hidden group hover:border-[#E8D4C5]/80 transition-all duration-500"
           >
             <CardCornerFiligree />
 
             {/* Simple & Classy Islamic Arch Frame */}
             <div className="relative w-56 h-72 sm:w-64 sm:h-80 mb-5 flex flex-col items-center pt-3">
               {/* Refined 8-Point Star Apex Ornament */}
-              <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#043327] border-2 border-[#D4AF37] flex items-center justify-center shadow-lg">
-                <Islamic8PointStar className="w-3.5 h-3.5 text-[#FCD34D]" />
+              <div className="absolute top-0 z-20 w-7 h-7 rounded-full bg-[#20062E] border-2 border-[#E8D4C5] flex items-center justify-center shadow-lg">
+                <Islamic8PointStar className="w-3.5 h-3.5 text-[#F5E6DC]" />
               </div>
 
               {/* Clean Islamic Arch Outer Frame */}
-              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#D4AF37] shadow-[0_10px_30px_rgba(0,0,0,0.4)] relative bg-[#022C22] group-hover:border-[#FCD34D] transition-colors duration-500">
+              <div className="w-full h-full p-1.5 rounded-t-[140px_105px] rounded-b-2xl border-2 border-[#E8D4C5] shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative bg-[#160420] group-hover:border-[#FFF0E6] transition-colors duration-500">
                 {/* Inner Fine Gold Accent Ring */}
-                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#D4AF37]/40 overflow-hidden relative bg-[#022C22] select-none">
+                <div className="w-full h-full rounded-t-[133px_98px] rounded-b-[10px] border border-[#E8D4C5]/40 overflow-hidden relative bg-[#160420] select-none">
                   <img
                     src={bride.photo}
                     alt={bride.name}
@@ -126,21 +126,21 @@ export default function TheCouple() {
               </div>
             </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#022C22] bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] px-4 py-1 rounded-full mb-2 shadow-md border border-[#FFF5D6]/40">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#160420] bg-gradient-to-r from-[#CBA68D] via-[#FFF0E6] to-[#E8D4C5] px-4 py-1 rounded-full mb-2 shadow-md border border-[#FFF0E6]/40">
               The Bride
             </span>
 
-            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF4D0] drop-shadow-[0_4px_12px_rgba(212,175,55,0.4)] font-normal mb-1 leading-tight whitespace-nowrap tracking-wide">
+            <h3 className="w-full text-center font-allura text-[1.65rem] min-[360px]:text-[1.85rem] min-[400px]:text-3xl sm:text-[2.2rem] md:text-2xl min-[900px]:text-3xl lg:text-[2.1rem] xl:text-4xl text-[#FFF0E6] drop-shadow-[0_4px_12px_rgba(232,212,197,0.4)] font-normal mb-1 leading-tight whitespace-nowrap tracking-wide">
               {bride.name}
             </h3>
 
             {/* Parentage Lineage Section */}
             <div className="mt-1 flex flex-col items-center">
-              <span className="text-[10px] sm:text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#D4AF37] mb-0.5">
+              <span className="text-[10px] sm:text-[11px] font-sans font-extrabold uppercase tracking-[0.25em] text-[#E8D4C5] mb-0.5">
                 Daughter Of
               </span>
-              <p className="font-cormorant text-base sm:text-lg text-[#FCD34D] italic leading-relaxed max-w-xs font-semibold">
-                Abdul Muthalib AK <span className="font-script text-[#D4AF37] font-normal text-xl mx-1">&amp;</span> Rahmabi N
+              <p className="font-cormorant text-base sm:text-lg text-[#F5E6DC] italic leading-relaxed max-w-xs font-semibold">
+                Abdul Muthalib AK <span className="font-script text-[#E8D4C5] font-normal text-xl mx-1">&amp;</span> Rahmabi N
               </p>
             </div>
           </motion.div>
@@ -152,21 +152,21 @@ export default function TheCouple() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="rounded-3xl bg-gradient-to-br from-[#064E3B] to-[#0A5C36] text-white border-2 border-[#D4AF37] p-6 sm:p-10 text-center max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
+          className="rounded-3xl bg-gradient-to-br from-[#280B3B] to-[#1C0528] text-white border-2 border-[#E8D4C5] p-6 sm:p-10 text-center max-w-3xl mx-auto shadow-2xl relative overflow-hidden"
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-10 rotate-slow transform-gpu will-change-transform">
-            <Islamic8PointStar className="w-[450px] h-[450px] text-[#D4AF37]" />
+            <Islamic8PointStar className="w-[450px] h-[450px] text-[#E8D4C5]" />
           </div>
 
-          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#E8D4C5] block mb-2">
             Invitation From The Families
           </span>
 
-          <p className="font-cormorant text-base sm:text-lg text-[#FAF6EE] leading-relaxed mb-4 max-w-2xl mx-auto italic font-medium">
+          <p className="font-cormorant text-base sm:text-lg text-[#FAF2ED] leading-relaxed mb-4 max-w-2xl mx-auto italic font-medium">
             {familyInvitationMessage}
           </p>
 
-          <p className="font-serif text-sm sm:text-base italic text-[#FCD34D] font-semibold">
+          <p className="font-serif text-sm sm:text-base italic text-[#F5E6DC] font-semibold">
             With love, prayers &amp; blessings from both families
           </p>
         </motion.div>

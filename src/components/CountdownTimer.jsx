@@ -43,7 +43,7 @@ export default function CountdownTimer() {
   return (
     <section
       id="countdown"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF6EE] relative overflow-hidden flex flex-col items-center justify-center text-center"
+      className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto w-full z-10">
         {/* Title */}
@@ -52,7 +52,7 @@ export default function CountdownTimer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-1.5"
+          className="text-xs font-bold uppercase tracking-[0.3em] text-[#E8D4C5] block mb-1.5"
         >
           Counting Down The Blessed Moments
         </motion.span>
@@ -61,7 +61,7 @@ export default function CountdownTimer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-3xl sm:text-5xl text-[#FAF6EE] font-bold"
+          className="font-serif text-3xl sm:text-5xl text-[#FAF2ED] font-bold"
         >
           Until The Wedding Reception
         </motion.h2>
@@ -77,7 +77,7 @@ export default function CountdownTimer() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center justify-center p-4 sm:p-6 rounded-3xl bg-gradient-to-b from-[#022C22] to-[#064E3B] border-2 border-[#D4AF37] gold-pulse-glow shadow-xl relative overflow-hidden group"
+              className="flex flex-col items-center justify-center p-4 sm:p-6 rounded-3xl bg-gradient-to-b from-[#160420] to-[#250A36] border-2 border-[#E8D4C5] gold-pulse-glow shadow-xl relative overflow-hidden group"
             >
               {/* Gold Shimmer Number Display */}
               <div className="h-14 sm:h-18 flex items-center justify-center overflow-hidden">
@@ -95,14 +95,14 @@ export default function CountdownTimer() {
                 </AnimatePresence>
               </div>
 
-              <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#FCD34D] mt-1.5">
+              <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#F5E6DC] mt-1.5">
                 {unit.label}
               </span>
             </motion.div>
           ))}
         </div>
 
-        <p className="font-sans text-xs sm:text-sm text-[#FCD34D] font-semibold tracking-wider">
+        <p className="font-sans text-xs sm:text-sm text-[#F5E6DC] font-semibold tracking-wider">
           {wedding.displayDate} • {wedding.displayTime}
         </p>
       </div>

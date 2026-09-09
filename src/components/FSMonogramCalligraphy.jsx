@@ -10,7 +10,7 @@ export default function FSMonogramCalligraphy({ className = "h-24 sm:h-32 w-auto
       <img
         src="/images/fs_custom_monogram.png"
         alt="Fayiz & Sahma Monogram"
-        className="h-full w-auto object-contain relative z-10 filter drop-shadow-[0_4px_18px_rgba(212,175,55,0.6)] group-hover:scale-105 transition-transform duration-300"
+        className="h-full w-auto object-contain relative z-10 filter drop-shadow-[0_4px_18px_rgba(232,212,197,0.7)] group-hover:scale-105 transition-transform duration-300"
         draggable="false"
       />
     </div>

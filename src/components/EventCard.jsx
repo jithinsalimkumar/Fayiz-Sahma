@@ -31,7 +31,7 @@ export default function EventCard() {
   return (
     <section
       id="event"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-[#022C22] text-[#FAF6EE] relative overflow-hidden"
+      className="py-12 sm:py-16 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto w-full">
         {/* Section Header */}
@@ -41,7 +41,7 @@ export default function EventCard() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37] block mb-1.5"
+            className="text-xs font-bold uppercase tracking-[0.3em] text-[#E8D4C5] block mb-1.5"
           >
             Celebration Venue &amp; Schedule
           </motion.span>
@@ -50,7 +50,7 @@ export default function EventCard() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-serif text-3xl sm:text-5xl text-[#FAF6EE] font-bold"
+            className="font-serif text-3xl sm:text-5xl text-[#FAF2ED] font-bold"
           >
             Wedding Reception
           </motion.h2>
@@ -63,7 +63,7 @@ export default function EventCard() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="rounded-3xl bg-[#064E3B]/95 border-2 border-[#D4AF37]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
+          className="rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/60 overflow-hidden shadow-xl max-w-4xl mx-auto flex flex-col lg:flex-row relative"
         >
           <CardCornerFiligree />
           {/* Venue Image */}
@@ -75,7 +75,7 @@ export default function EventCard() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
-              <span className="text-xs uppercase tracking-widest bg-[#064E3B]/95 text-[#FCD34D] px-3.5 py-1 rounded-full border border-[#D4AF37] font-semibold">
+              <span className="text-xs uppercase tracking-widest bg-[#250A36]/95 text-[#F5E6DC] px-3.5 py-1 rounded-full border border-[#E8D4C5] font-semibold">
                 Official Venue
               </span>
             </div>
@@ -84,42 +84,42 @@ export default function EventCard() {
           {/* Details & Interactive Map */}
           <div className="lg:w-1/2 p-6 sm:p-8 flex flex-col justify-between text-left">
             <div>
-              <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full mb-3 inline-block">
+              <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#E8D4C5] bg-[#E8D4C5]/10 px-3 py-1 rounded-full mb-3 inline-block">
                 Location &amp; Timings
               </span>
 
-              <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF6EE] font-bold mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF2ED] font-bold mb-3">
                 {venue.name}
               </h3>
 
               <div className="space-y-3 my-4">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
+                  <div className="p-2 rounded-xl bg-[#160420] text-[#E8D4C5] mt-0.5 shadow-xs border border-[#E8D4C5]/30">
                     <Calendar className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-bold">Date</p>
-                    <p className="font-serif text-sm sm:text-base font-bold text-[#FAF6EE]">{wedding.displayDate}</p>
+                    <p className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-bold">Date</p>
+                    <p className="font-serif text-sm sm:text-base font-bold text-[#FAF2ED]">{wedding.displayDate}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
+                  <div className="p-2 rounded-xl bg-[#160420] text-[#E8D4C5] mt-0.5 shadow-xs border border-[#E8D4C5]/30">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-bold">Time</p>
-                    <p className="font-serif text-sm sm:text-base font-bold text-[#FAF6EE]">{wedding.displayTime}</p>
+                    <p className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-bold">Time</p>
+                    <p className="font-serif text-sm sm:text-base font-bold text-[#FAF2ED]">{wedding.displayTime}</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-xl bg-[#022C22] text-[#D4AF37] mt-0.5 shadow-xs border border-[#D4AF37]/30">
+                  <div className="p-2 rounded-xl bg-[#160420] text-[#E8D4C5] mt-0.5 shadow-xs border border-[#E8D4C5]/30">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="text-[11px] uppercase tracking-wider text-[#FCD34D] font-bold">Address</p>
-                    <p className="font-sans text-xs sm:text-sm text-[#FAF6EE] font-medium">
+                    <p className="text-[11px] uppercase tracking-wider text-[#F5E6DC] font-bold">Address</p>
+                    <p className="font-sans text-xs sm:text-sm text-[#FAF2ED] font-medium">
                       {venue.fullAddress}
                     </p>
                   </div>
@@ -128,7 +128,7 @@ export default function EventCard() {
 
               {/* Embedded Interactive Map Preview */}
               {venue.mapEmbedUrl && (
-                <div className="w-full h-32 rounded-xl overflow-hidden border border-[#D4AF37]/40 mb-4 shadow-inner relative">
+                <div className="w-full h-32 rounded-xl overflow-hidden border border-[#E8D4C5]/40 mb-4 shadow-inner relative">
                   <iframe
                     title="Venue Location Map"
                     src={venue.mapEmbedUrl}
@@ -144,15 +144,15 @@ export default function EventCard() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col gap-2.5 pt-3 border-t border-[#D4AF37]/30">
+            <div className="flex flex-col gap-2.5 pt-3 border-t border-[#E8D4C5]/30">
               <div className="flex flex-col sm:flex-row gap-2.5">
                 <a
                   href={venue.mapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-[#022C22] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md group cursor-pointer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-[#160420] to-[#250A36] text-[#E8D4C5] text-xs font-bold uppercase tracking-wider border border-[#E8D4C5] hover:scale-105 transition-all shadow-md group cursor-pointer"
                 >
-                  <Navigation className="w-3.5 h-3.5 text-[#D4AF37] group-hover:rotate-12 transition-transform" />
+                  <Navigation className="w-3.5 h-3.5 text-[#E8D4C5] group-hover:rotate-12 transition-transform" />
                   <span>Get Directions</span>
                 </a>
 
@@ -160,9 +160,9 @@ export default function EventCard() {
                   href={addToCalendarLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-[#022C22] border-2 border-[#D4AF37] text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-[#160420] border-2 border-[#E8D4C5] text-[#E8D4C5] text-xs font-bold uppercase tracking-wider hover:scale-105 transition-all shadow-md cursor-pointer"
                 >
-                  <CalendarPlus className="w-3.5 h-3.5 text-[#D4AF37]" />
+                  <CalendarPlus className="w-3.5 h-3.5 text-[#E8D4C5]" />
                   <span>Add to Calendar</span>
                 </a>
               </div>
@@ -170,9 +170,9 @@ export default function EventCard() {
               {/* Share Invitation Button below Add to Calendar */}
               <button
                 onClick={handleShareSite}
-                className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-[#064E3B] via-[#0A5C36] to-[#064E3B] text-[#D4AF37] text-xs font-bold uppercase tracking-wider border border-[#D4AF37] hover:scale-105 transition-all shadow-md cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-[#280B3B] via-[#320F48] to-[#280B3B] text-[#E8D4C5] text-xs font-bold uppercase tracking-wider border border-[#E8D4C5] hover:scale-105 transition-all shadow-md cursor-pointer"
               >
-                <Share2 className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <Share2 className="w-3.5 h-3.5 text-[#E8D4C5]" />
                 <span>{shared ? "Link Copied!" : "Share Invitation"}</span>
               </button>
             </div>

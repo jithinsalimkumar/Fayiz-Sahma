@@ -25,9 +25,9 @@ export default function ScrollProgress() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-1 z-50 bg-emerald-950/20 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 h-1 z-50 bg-[#160420]/30 pointer-events-none">
       <div
-        className="h-full w-full bg-gradient-to-r from-[#D4AF37] via-[#FFF4D0] to-[#D4AF37] shadow-[0_0_10px_#D4AF37] transform-gpu origin-left"
+        className="h-full w-full bg-gradient-to-r from-[#CBA68D] via-[#FFF0E6] to-[#E8D4C5] shadow-[0_0_10px_rgba(232,212,197,0.8)] transform-gpu origin-left"
         style={{ transform: `scaleX(${scrollProgress / 100})` }}
       />
     </div>

@@ -45,7 +45,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#022C22] text-[#FAF6EE] selection:bg-[#D4AF37]/30 selection:text-[#FAF6EE] relative font-sans overflow-x-clip">
+    <div className="min-h-screen bg-[#160420] text-[#FAF2ED] selection:bg-[#E8D4C5]/30 selection:text-[#FAF2ED] relative font-sans overflow-x-clip">
       {/* Scroll Progress Bar (Page 2) */}
       {isOpened && <ScrollProgress />}
 

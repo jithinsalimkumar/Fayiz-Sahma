@@ -11,17 +11,17 @@
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-arabic: "Scheherazade New", "Amiri", "Amiri Quran", "Reem Kufi", serif;
 
-  --color-emerald-950: #022C22;
-  --color-emerald-900: #064E3B;
-  --color-emerald-800: #0A5C36;
-  --color-emerald-700: #0E7490;
-  --color-emerald-600: #10B981;
+  --color-emerald-950: #160420;
+  --color-emerald-900: #250A36;
+  --color-emerald-800: #320F48;
+  --color-emerald-700: #42165D;
+  --color-emerald-600: #E8D4C5;
 
-  --color-gold-600: #B48A1D;
-  --color-gold-500: #D4AF37;
-  --color-gold-400: #F59E0B;
-  --color-gold-300: #FCD34D;
-  --color-gold-200: #FDE68A;
+  --color-gold-600: #A87E65;
+  --color-gold-500: #E8D4C5;
+  --color-gold-400: #F3E0D4;
+  --color-gold-300: #F5E6DC;
+  --color-gold-200: #FFF0E6;
   --font-greatvibes: "Great Vibes", cursive;
   --font-doulaise: "Monsieur La Doulaise", cursive;
   --font-italianno: "Italianno", cursive;
@@ -34,8 +34,8 @@
 
 @layer base {
   html {
-    background-color: #022C22;
-    color: #FAF6EE;
+    background-color: #160420;
+    color: #FAF2ED;
     -webkit-text-size-adjust: 100%;
   }
   
@@ -43,8 +43,8 @@
     font-family: var(--font-sans);
     margin: 0;
     padding: 0;
-    background-color: #022C22 !important;
-    color: #FAF6EE !important;
+    background-color: #160420 !important;
+    color: #FAF2ED !important;
     -webkit-text-size-adjust: 100%;
     overflow-x: clip;
   }
@@ -115,20 +115,20 @@
   }
 }
 
-/* Gold Calligraphy & Shimmer Styles */
+/* Champagne Rose Gold Calligraphy & Shimmer Styles */
 .arabic-gold {
-  color: #D4AF37;
-  text-shadow: 0 2px 10px rgba(212, 175, 55, 0.4);
+  color: #E8D4C5;
+  text-shadow: 0 2px 10px rgba(232, 212, 197, 0.4);
 }
 
 .gold-shimmer-text {
   background: linear-gradient(
     110deg,
-    #B48A1D 0%,
-    #D4AF37 25%,
-    #FFF4D0 50%,
-    #D4AF37 75%,
-    #B48A1D 100%
+    #A87E65 0%,
+    #E8D4C5 25%,
+    #FFF0E6 50%,
+    #E8D4C5 75%,
+    #A87E65 100%
   );
   background-size: 200% auto;
   color: transparent;
@@ -141,11 +141,11 @@
 .gold-shimmer-border {
   border-image: linear-gradient(
     110deg,
-    #B48A1D 0%,
-    #D4AF37 30%,
-    #FFF4D0 50%,
-    #D4AF37 70%,
-    #B48A1D 100%
+    #A87E65 0%,
+    #E8D4C5 30%,
+    #FFF0E6 50%,
+    #E8D4C5 70%,
+    #A87E65 100%
   ) 1;
 }
 
@@ -155,18 +155,18 @@
   }
 }
 
-/* Gold Pulsing Glow Effect for Countdown Numbers */
+/* Champagne Pulsing Glow Effect for Countdown Numbers */
 .gold-pulse-glow {
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35), inset 0 0 15px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 25px rgba(232, 212, 197, 0.35), inset 0 0 15px rgba(232, 212, 197, 0.15);
   animation: goldPulse 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes goldPulse {
   0% {
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 10px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 15px rgba(232, 212, 197, 0.25), inset 0 0 10px rgba(232, 212, 197, 0.1);
   }
   100% {
-    box-shadow: 0 0 35px rgba(212, 175, 55, 0.55), inset 0 0 25px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 0 35px rgba(232, 212, 197, 0.55), inset 0 0 25px rgba(232, 212, 197, 0.25);
   }
 }
 
@@ -175,14 +175,14 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #022C22;
+  background: #160420;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D4AF37;
+  background: #E8D4C5;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #B48A1D;
+  background: #CBA68D;
 }
 
 /* Slow rotation animation for Islamic star geometric overlays */
