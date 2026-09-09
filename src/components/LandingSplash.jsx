@@ -21,41 +21,45 @@ export default function LandingSplash({ onEnter }) {
       animate={{ opacity: isOpening ? 0 : 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="fixed inset-0 w-full h-full min-h-screen bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-center overflow-y-auto overscroll-contain touch-pan-y z-50 select-none flex flex-col items-center justify-center p-3 sm:p-6"
+      className="fixed inset-0 w-full h-full min-h-screen bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-center overflow-y-auto overscroll-contain touch-pan-y z-50 select-none"
     >
-      {/* Grouped Wrapper - Centers Bismillah + Card as one single unit exactly in the middle of screen */}
-      <div className="w-full flex flex-col items-center justify-center my-auto py-4 sm:py-6 max-h-[550px]:py-2">
+      {/* 
+        Responsive Flex Container:
+        - Mobile Landscape (height < 600px): justify-start with pt-3 so Bismillah starts at Y>=0 (100% VISIBLE AT TOP, zero negative scroll bug!)
+        - Mobile Portrait & Desktop (height >= 600px): justify-center with my-auto for exact equal top & bottom margins
+      */}
+      <div className="w-full min-h-full flex flex-col items-center justify-start max-h-[600px]:justify-start min-[601px]:justify-center p-3 sm:p-6 pt-3 max-h-[600px]:pt-3 min-[601px]:pt-6 pb-6 my-auto">
         
         {/* Top Bismillah Calligraphy */}
         <motion.div
           animate={{ opacity: isOpening ? 0 : 1, y: isOpening ? -30 : 0 }}
           transition={{ duration: 0.3 }}
-          className="mb-4 sm:mb-6 max-h-[550px]:mb-2 z-10 flex-shrink-0"
+          className="mb-3 sm:mb-5 max-h-[600px]:mb-1.5 z-10 flex-shrink-0"
         >
-          <p className="font-arabic text-2xl sm:text-4xl max-h-[550px]:text-xl text-[#E8D4C5] arabic-gold tracking-wider mb-3 sm:mb-4 max-h-[550px]:mb-2 font-normal leading-relaxed">
+          <p className="font-arabic text-xl sm:text-3xl lg:text-4xl max-h-[600px]:text-lg text-[#E8D4C5] arabic-gold tracking-wider mb-2 sm:mb-3 max-h-[600px]:mb-1 font-normal leading-relaxed">
             {bismillah.arabic}
           </p>
-          <p className="text-xs sm:text-sm max-h-[550px]:text-[11px] tracking-[0.2em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
+          <p className="text-[11px] sm:text-xs lg:text-sm max-h-[600px]:text-[10px] tracking-[0.2em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
             {bismillah.translation}
           </p>
         </motion.div>
 
-        {/* Central Card Container - Expanded Luxurious Spacing */}
+        {/* Central Card Container */}
         <motion.div
           animate={{ opacity: isOpening ? 0 : 1, scale: isOpening ? 0.95 : 1 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="py-10 sm:py-14 max-h-[550px]:py-4 px-6 sm:px-12 max-h-[550px]:px-5 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/80 shadow-[0_25px_70px_rgba(0,0,0,0.85)] max-w-md sm:max-w-lg w-full z-10 flex flex-col items-center relative flex-shrink my-1"
+          className="py-6 sm:py-9 lg:py-11 max-h-[600px]:py-3 px-5 sm:px-10 lg:px-12 max-h-[600px]:px-4 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/80 shadow-[0_25px_70px_rgba(0,0,0,0.85)] max-w-md sm:max-w-lg w-full z-10 flex flex-col items-center relative flex-shrink my-1"
         >
           {/* Dynamic Rotating Geometric Pattern (Clipped to card bounds) */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-14 rotate-slow transform-gpu will-change-transform overflow-hidden rounded-3xl">
-            <Islamic8PointStar className="w-[600px] h-[600px] sm:w-[680px] sm:h-[680px] text-[#E8D4C5]" />
+            <Islamic8PointStar className="w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] text-[#E8D4C5]" />
           </div>
           <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(232,212,197,0.15)_0%,transparent_75%)] rounded-3xl" />
 
           {/* Corner Islamic Geometric Accents */}
           <CardCornerFiligree />
 
-          {/* Monogram Crest - Grand Luxury Sizing */}
+          {/* Monogram Crest */}
           <motion.div
             animate={
               isOpening
@@ -70,9 +74,9 @@ export default function LandingSplash({ onEnter }) {
                   }
             }
             transition={{ duration: 0.58, ease: [0.16, 1, 0.3, 1] }}
-            className="my-3 sm:my-4 max-h-[550px]:my-1 z-30 cursor-pointer flex items-center justify-center transform-gpu"
+            className="my-2 sm:my-3 max-h-[600px]:my-0.5 z-30 cursor-pointer flex items-center justify-center transform-gpu"
           >
-            <FSMonogramCalligraphy className="h-24 sm:h-30 max-h-[550px]:h-14 w-auto" />
+            <FSMonogramCalligraphy className="h-18 sm:h-24 lg:h-28 max-h-[600px]:h-12 w-auto" />
           </motion.div>
 
           {/* Card Details */}
@@ -81,28 +85,28 @@ export default function LandingSplash({ onEnter }) {
             transition={{ duration: 0.3 }}
             className="flex flex-col items-center w-full z-10"
           >
-            <span className="text-xs max-h-[550px]:text-[10px] font-bold uppercase tracking-[0.25em] text-[#E8D4C5] bg-[#E8D4C5]/10 px-4 py-1.5 max-h-[550px]:py-0.5 rounded-full border border-[#E8D4C5]/40 my-3 sm:my-3.5 max-h-[550px]:my-1 shadow-xs">
+            <span className="text-[11px] sm:text-xs max-h-[600px]:text-[9px] font-bold uppercase tracking-[0.25em] text-[#E8D4C5] bg-[#E8D4C5]/10 px-3.5 py-1 sm:py-1.5 max-h-[600px]:py-0.5 rounded-full border border-[#E8D4C5]/40 my-2 sm:my-2.5 max-h-[600px]:my-0.5 shadow-xs">
               The Wedding Reception
             </span>
 
             {/* Couple First Names with Gold Shimmer Typography */}
-            <h1 className="font-display text-3xl sm:text-4xl max-h-[550px]:text-2xl text-[#FAF2ED] font-bold tracking-wider my-3 sm:my-4 max-h-[550px]:my-1 leading-tight gold-shimmer-text">
-              {groom.shortName} <span className="font-script text-[#E8D4C5] font-normal text-4xl sm:text-5xl max-h-[550px]:text-2xl mx-1.5">&amp;</span> {bride.shortName}
+            <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl max-h-[600px]:text-xl text-[#FAF2ED] font-bold tracking-wider my-2 sm:my-2.5 max-h-[600px]:my-0.5 leading-tight gold-shimmer-text">
+              {groom.shortName} <span className="font-script text-[#E8D4C5] font-normal text-3xl sm:text-4xl lg:text-5xl max-h-[600px]:text-2xl mx-1">&amp;</span> {bride.shortName}
             </h1>
 
-            <IslamicArchDivider className="my-3.5 sm:my-4.5 max-h-[550px]:my-1.5" />
+            <IslamicArchDivider className="my-2.5 sm:my-3 max-h-[600px]:my-1" />
 
             {/* Wedding Date */}
-            <p className="font-serif text-sm sm:text-base max-h-[550px]:text-xs text-[#F5E6DC] tracking-wider font-semibold mb-1">
+            <p className="font-serif text-xs sm:text-sm lg:text-base max-h-[600px]:text-xs text-[#F5E6DC] tracking-wider font-semibold mb-0.5">
               {wedding.displayDate}
             </p>
 
             {/* Open Invitation Pill Button inside Card */}
-            <div className="mt-7 sm:mt-9 max-h-[550px]:mt-3 mb-1">
+            <div className="mt-5 sm:mt-7 max-h-[600px]:mt-2 mb-1">
               <button
                 onClick={handleOpen}
                 disabled={isOpening}
-                className="inline-flex items-center justify-center px-9 sm:px-11 py-3.5 sm:py-4 max-h-[550px]:py-2 max-h-[550px]:px-6 rounded-full bg-gradient-to-r from-[#CBA68D] via-[#FFF0E6] to-[#E8D4C5] text-[#160420] text-xs sm:text-sm max-h-[550px]:text-[11px] font-extrabold uppercase tracking-[0.2em] shadow-[0_12px_35px_rgba(232,212,197,0.5)] border border-[#FFF0E6] hover:scale-105 active:scale-95 transition-all cursor-pointer focus:outline-none disabled:opacity-80"
+                className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-3.5 max-h-[600px]:py-1.5 max-h-[600px]:px-5 rounded-full bg-gradient-to-r from-[#CBA68D] via-[#FFF0E6] to-[#E8D4C5] text-[#160420] text-xs sm:text-sm max-h-[600px]:text-[11px] font-extrabold uppercase tracking-[0.2em] shadow-[0_12px_35px_rgba(232,212,197,0.5)] border border-[#FFF0E6] hover:scale-105 active:scale-95 transition-all cursor-pointer focus:outline-none disabled:opacity-80"
               >
                 Open Invitation
               </button>
