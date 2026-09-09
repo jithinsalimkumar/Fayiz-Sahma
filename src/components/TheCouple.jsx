@@ -9,7 +9,7 @@ export default function TheCouple() {
   return (
     <section
       id="couple"
-      className="py-12 sm:py-16 max-h-[520px]:py-8 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden"
+      className="py-14 sm:py-20 max-h-[550px]:py-10 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Section Header */}

@@ -52,7 +52,7 @@ function GoldDividerSVG() {
 
 export default function Navbar() {
   return (
-    <header className="absolute top-0 left-0 right-0 z-40 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-6 max-h-[520px]:py-2">
+    <header className="absolute top-0 left-0 right-0 z-40 pointer-events-none flex items-center justify-center px-2 sm:px-6 py-4 sm:py-6 max-h-[550px]:py-2">
       <div className="w-full max-w-5xl flex items-center justify-between pointer-events-auto px-2 sm:px-6">
         {/* Left Side Ornamental 24K Gold Royal Divider */}
         <div className="flex-1 flex items-center justify-end pr-2 sm:pr-4 overflow-hidden">
@@ -64,7 +64,7 @@ export default function Navbar() {
           href="#hero"
           className="hover:scale-105 transition-transform flex-shrink-0 z-10 mx-2"
         >
-          <FSMonogramCalligraphy className="h-10 sm:h-14 max-h-[520px]:h-8 w-auto" />
+          <FSMonogramCalligraphy className="h-10 sm:h-14 max-h-[550px]:h-8 w-auto" />
         </a>
 
         {/* Right Side Ornamental 24K Gold Royal Divider (Horizontally Mirrored) */}

@@ -6,7 +6,7 @@ export default function Footer() {
   const { groom, bride, hashtag } = weddingData;
 
   return (
-    <footer className="w-full py-10 sm:py-12 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] border-t border-[#E8D4C5]/30 text-center relative z-10 overflow-hidden">
+    <footer className="w-full py-10 sm:py-14 max-h-[550px]:py-8 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] border-t border-[#E8D4C5]/30 text-center relative z-10 overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         {/* 1. Top Arabic Calligraphy - Jazakumullahu Khairan */}
         <motion.div

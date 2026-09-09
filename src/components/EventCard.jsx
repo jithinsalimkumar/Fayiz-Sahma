@@ -31,7 +31,7 @@ export default function EventCard() {
   return (
     <section
       id="event"
-      className="py-12 sm:py-16 max-h-[520px]:py-8 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden"
+      className="py-14 sm:py-20 max-h-[550px]:py-10 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto w-full">
         {/* Section Header */}

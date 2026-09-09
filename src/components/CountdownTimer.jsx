@@ -43,7 +43,7 @@ export default function CountdownTimer() {
   return (
     <section
       id="countdown"
-      className="py-12 sm:py-16 max-h-[520px]:py-8 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden flex flex-col items-center justify-center text-center"
+      className="py-14 sm:py-20 max-h-[550px]:py-10 px-4 sm:px-6 bg-gradient-to-b from-[#160420] via-[#2A0C3D] to-[#160420] text-[#FAF2ED] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       <div className="max-w-4xl mx-auto w-full z-10">
         {/* Title */}

@@ -9,11 +9,11 @@ export default function BlessingVerse() {
   return (
     <section
       id="verse"
-      className="py-12 sm:py-16 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden flex flex-col items-center justify-center text-center"
+      className="py-14 sm:py-20 max-h-[550px]:py-10 px-4 sm:px-6 bg-[#160420] text-[#FAF2ED] relative overflow-hidden flex flex-col items-center justify-center text-center"
     >
       {/* Animated geometric star pattern backdrop */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 rotate-slow transform-gpu will-change-transform">
-        <Islamic8PointStar className="w-[500px] h-[500px] text-[#E8D4C5]" />
+        <Islamic8PointStar className="w-[500px] h-[500px] max-h-[550px]:w-[380px] max-h-[550px]:h-[380px] text-[#E8D4C5]" />
       </div>
 
       <div className="max-w-3xl mx-auto w-full z-10">
@@ -22,7 +22,7 @@ export default function BlessingVerse() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="p-6 sm:p-12 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/60 shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative"
+          className="p-6 sm:p-12 max-h-[550px]:p-5 rounded-3xl bg-[#250A36]/95 border-2 border-[#E8D4C5]/60 shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative"
         >
           {/* Corner Flourish Markers */}
           <CardCornerFiligree />
