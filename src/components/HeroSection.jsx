@@ -26,10 +26,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="mb-2 sm:mb-3 max-h-[550px]:mb-1"
         >
-          <p className="font-arabic text-2xl sm:text-4xl max-h-[550px]:text-xl text-[#E8D4C5] arabic-gold tracking-wider mb-3 sm:mb-3.5 max-h-[550px]:mb-2 font-normal leading-relaxed">
+          <p className="font-arabic text-xl sm:text-3xl max-h-[550px]:text-lg text-[#E8D4C5] arabic-gold tracking-wider mb-2.5 sm:mb-3 max-h-[550px]:mb-1.5 font-normal leading-relaxed">
             {bismillah.arabic}
           </p>
-          <p className="text-xs max-h-[550px]:text-[10px] tracking-[0.25em] uppercase font-medium text-[#F5E6DC]">
+          <p className="text-[11px] sm:text-xs max-h-[550px]:text-[10px] tracking-[0.25em] uppercase font-medium text-[#F5E6DC]">
             {bismillah.translation}
           </p>
         </motion.div>

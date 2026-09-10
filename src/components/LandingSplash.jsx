@@ -36,10 +36,10 @@ export default function LandingSplash({ onEnter }) {
           transition={{ duration: 0.3 }}
           className="mb-4 sm:mb-6 max-h-[600px]:mb-1.5 z-10 flex-shrink-0"
         >
-          <p className="font-arabic text-2xl sm:text-3xl lg:text-4xl max-h-[600px]:text-lg text-[#E8D4C5] arabic-gold tracking-wider mb-2.5 sm:mb-3.5 max-h-[600px]:mb-1 font-normal leading-relaxed">
+          <p className="font-arabic text-xl sm:text-2xl lg:text-3xl max-h-[600px]:text-base text-[#E8D4C5] arabic-gold tracking-wider mb-2 sm:mb-2.5 max-h-[600px]:mb-1 font-normal leading-relaxed">
             {bismillah.arabic}
           </p>
-          <p className="text-xs sm:text-sm lg:text-base max-h-[600px]:text-[10px] tracking-[0.2em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
+          <p className="text-[11px] sm:text-xs lg:text-sm max-h-[600px]:text-[10px] tracking-[0.2em] uppercase font-medium text-[#F5E6DC] font-sans max-w-md mx-auto">
             {bismillah.translation}
           </p>
         </motion.div>
